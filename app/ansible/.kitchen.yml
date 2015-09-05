@@ -1,0 +1,32 @@
+---
+driver:
+  name: vagrant
+  network:
+    - ["private_network", {ip: "192.168.31.199" }]
+  customize:
+    memory: 1024
+    cpuexecutioncap: 50
+  provision: true
+  vagrantfiles:
+    - .vagrant.rb
+  provider: virtualbox
+
+provisioner:
+  name: ansible_playbook
+  roles_path: roles
+  hosts: all
+  require_ansile_omnibus: true
+  ansible_verbose: true
+  ansible_verbosity: 2
+  ansible_diff: true
+
+platforms:
+  - name: trusty
+    driver_config:
+      box: puppetlabs/ubuntu-14.04-64-nocm
+
+suites:
+  - name: default
+
+verifier:
+  ruby_bindir: /usr/bin
