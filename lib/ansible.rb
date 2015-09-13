@@ -4,7 +4,7 @@ require 'open3'
 
 include Process
 
-################# :P
+################# SPACER
 
 module Ansible
 
@@ -15,6 +15,7 @@ module Ansible
   class PlaybookException < StandardError
   end
 
+  # Thow progressively specific exceptions
   class FlattenParamsException < PlaybookException
   end
 
@@ -80,10 +81,12 @@ module Ansible
         puts "There was problem flattening additional parameters. Cannot continue. #{e.message}"
       end
 
+      ## Attempt to form additional argument strings
       cmd_extra_vars = "-e " + flattened_extra_vars.join(" -e ")
       cmd_tags = " --tags=" + flattened_tags.join(",")
       cmd_skip_tags = " --skip-tags=" + flattened_skip_tags.join(",")
 
+      ## Concat additional arguments unless they are empty
       extra_arguments = ""
       extra_arguments.concat(cmd_extra_vars) unless cmd_extra_vars == "-e "
       extra_arguments.concat(cmd_tags) unless cmd_tags == " --tags="

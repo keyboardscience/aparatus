@@ -12,12 +12,14 @@ class Cluster < ActiveRecord::Base
 
   private
   def allocate_cluster
-    AnsibleJob.perform_later("#{ENV['RAILS_ENV']}", "playbook_database_servers", :extra_vars => {} )
+    AnsibleJob.perform_later("#{ENV['RAILS_ENV']}", "allocate_cluster.yml" )
   end
 
   def update_cluster
+    AnsibleJob.perform_later("#{ENV['RAILS_ENV']}", "update_cluster.yml" )
   end
 
   def destroy_cluster
+    AnsibleJob.perform_later("#{ENV['RAILS_ENV']}", "destroy_cluster.yml" )
   end
 end

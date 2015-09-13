@@ -1,0 +1,6 @@
+---
+hostname: 127.0.0.1
+port: '2201'
+username: vagrant
+ssh_key: "/Users/kevinphillips/zen/tools/aparatus/app/ansible/.kitchen/kitchen-vagrant/kitchen-ansible-postgresql-trusty/.vagrant/machines/default/virtualbox/private_key"
+last_action: setup

@@ -1,0 +1,21 @@
+---
+
+- name: Output effective configuration dictionary
+  debug: msg="{{ psql_default_conf |  dict_union(psql_custom_conf) }}"
+
+- name: Ensure package(s) are installed
+
+- name: Ensure configuration directories exist, are owned by cluster user, are grouped into the cluster user wheel, and have proper permissions
+  debug:
+
+- name: Ensure cluster directores exist, are owned by cluster user, are grouped into the cluster user wheel, and have proper permissions
+  debug:
+
+- name: Ensure cluster configuration
+  debug:
+
+- name: Ensure cluster Host Base Access control configuration
+  debug:
+
+- name: Ensure cluster directory exists, is owned by cluster user, are grouped into the cluster user wheel and have proper permissions
+  debug:

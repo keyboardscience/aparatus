@@ -2,7 +2,7 @@
 driver:
   name: vagrant
   network:
-    - ["private_network", {ip: "192.168.31.199" }]
+    - ["private_network", {ip: "192.168.31.198" }]
   customize:
     memory: 1024
     cpuexecutioncap: 50
@@ -26,7 +26,7 @@ platforms:
       box: puppetlabs/ubuntu-14.04-64-nocm
 
 suites:
-  - name: default
+  - name: postgresql
 
 verifier:
   ruby_bindir: /usr/bin

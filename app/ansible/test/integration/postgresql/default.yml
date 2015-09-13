@@ -1,0 +1,8 @@
+---
+
+- name: Wrapper for 'postgresql' role testing
+  hosts: all
+  vars:
+    certificate: "wildcard_omadahealth_net"
+  roles:
+    - postgresql

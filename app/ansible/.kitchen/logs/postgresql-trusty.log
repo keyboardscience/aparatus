@@ -1,0 +1,606 @@
+I, [2015-09-11T20:23:09.977595 #55678]  INFO -- postgresql-trusty: -----> Verifying <postgresql-trusty>...
+I, [2015-09-11T20:23:09.978478 #55678]  INFO -- postgresql-trusty: Preparing files for transfer
+I, [2015-09-11T20:23:10.428530 #55678]  INFO -- postgresql-trusty: -----> Busser installation detected (busser)
+I, [2015-09-11T20:23:10.428992 #55678]  INFO -- postgresql-trusty: Installing Busser plugins: busser-serverspec
+I, [2015-09-11T20:24:45.961959 #55678]  INFO -- postgresql-trusty: Plugin serverspec already installed
+I, [2015-09-11T20:24:46.388558 #55678]  INFO -- postgresql-trusty: Removing /tmp/verifier/suites/serverspec
+I, [2015-09-11T20:24:46.397481 #55678]  INFO -- postgresql-trusty: Transferring files to <postgresql-trusty>
+I, [2015-09-11T20:24:46.809088 #55678]  INFO -- postgresql-trusty: -----> Running serverspec test suite
+I, [2015-09-11T20:24:46.999334 #55678]  INFO -- postgresql-trusty: /usr/bin/ruby -I/tmp/verifier/suites/serverspec -I/tmp/verifier/gems/gems/rspec-support-3.3.0/lib:/tmp/verifier/gems/gems/rspec-core-3.3.2/lib /tmp/verifier/gems/bin/rspec --pattern /tmp/verifier/suites/serverspec/\*\*/\*_spec.rb --color --format documentation --default-path /tmp/verifier/suites/serverspec
+I, [2015-09-11T20:24:47.699670 #55678]  INFO -- postgresql-trusty: 
+I, [2015-09-11T20:24:47.700286 #55678]  INFO -- postgresql-trusty: Package "postgresql-9.4"
+I, [2015-09-11T20:24:47.925923 #55678]  INFO -- postgresql-trusty: [31m  should be installed (FAILED - 1)[0m
+I, [2015-09-11T20:24:47.926248 #55678]  INFO -- postgresql-trusty: 
+I, [2015-09-11T20:24:47.926848 #55678]  INFO -- postgresql-trusty: File "/etc/postgresql"
+I, [2015-09-11T20:24:47.931977 #55678]  INFO -- postgresql-trusty: [31m  should be a directory (FAILED - 2)[0m
+I, [2015-09-11T20:24:47.937136 #55678]  INFO -- postgresql-trusty: [31m  should be owned by "postgres" (FAILED - 3)[0m
+I, [2015-09-11T20:24:47.945402 #55678]  INFO -- postgresql-trusty: [31m  should be grouped into "postgres" (FAILED - 4)[0m
+I, [2015-09-11T20:24:48.108411 #55678]  INFO -- postgresql-trusty: [31m  should be readable (FAILED - 5)[0m
+I, [2015-09-11T20:24:48.108483 #55678]  INFO -- postgresql-trusty: [31m  should be readable (FAILED - 6)[0m
+I, [2015-09-11T20:24:48.108511 #55678]  INFO -- postgresql-trusty: [31m  should be writable (FAILED - 7)[0m
+I, [2015-09-11T20:24:48.108533 #55678]  INFO -- postgresql-trusty: [32m  should not be readable[0m
+I, [2015-09-11T20:24:48.108554 #55678]  INFO -- postgresql-trusty: [32m  should not be writable[0m
+I, [2015-09-11T20:24:48.108574 #55678]  INFO -- postgresql-trusty: 
+I, [2015-09-11T20:24:48.108593 #55678]  INFO -- postgresql-trusty: File "/etc/postgresql/9.4/main"
+I, [2015-09-11T20:24:48.108613 #55678]  INFO -- postgresql-trusty: [31m  should be a directory (FAILED - 8)[0m
+I, [2015-09-11T20:24:48.108711 #55678]  INFO -- postgresql-trusty: [31m  should be owned by "postgres" (FAILED - 9)[0m
+I, [2015-09-11T20:24:48.108735 #55678]  INFO -- postgresql-trusty: [31m  should be grouped into "postgres" (FAILED - 10)[0m
+I, [2015-09-11T20:24:48.108756 #55678]  INFO -- postgresql-trusty: [31m  should be readable (FAILED - 11)[0m
+I, [2015-09-11T20:24:48.108775 #55678]  INFO -- postgresql-trusty: [31m  should be readable (FAILED - 12)[0m
+I, [2015-09-11T20:24:48.108794 #55678]  INFO -- postgresql-trusty: [31m  should be writable (FAILED - 13)[0m
+I, [2015-09-11T20:24:48.114531 #55678]  INFO -- postgresql-trusty: [32m  should not be readable[0m
+I, [2015-09-11T20:24:48.120677 #55678]  INFO -- postgresql-trusty: [32m  should not be writable[0m
+I, [2015-09-11T20:24:48.120905 #55678]  INFO -- postgresql-trusty: 
+I, [2015-09-11T20:24:48.121669 #55678]  INFO -- postgresql-trusty: File "/etc/postgresql/9.4/main/postgresql.conf"
+I, [2015-09-11T20:24:48.125608 #55678]  INFO -- postgresql-trusty: [31m  should be a file (FAILED - 14)[0m
+I, [2015-09-11T20:24:48.131432 #55678]  INFO -- postgresql-trusty: [31m  should be owned by "postgres" (FAILED - 15)[0m
+I, [2015-09-11T20:24:48.139555 #55678]  INFO -- postgresql-trusty: [31m  should be grouped into "postgres" (FAILED - 16)[0m
+I, [2015-09-11T20:24:48.144341 #55678]  INFO -- postgresql-trusty: [31m  should be readable (FAILED - 17)[0m
+I, [2015-09-11T20:24:48.150193 #55678]  INFO -- postgresql-trusty: [31m  should be readable (FAILED - 18)[0m
+I, [2015-09-11T20:24:48.156223 #55678]  INFO -- postgresql-trusty: [31m  should be writable (FAILED - 19)[0m
+I, [2015-09-11T20:24:48.215746 #55678]  INFO -- postgresql-trusty: [32m  should not be readable[0m
+I, [2015-09-11T20:24:48.222592 #55678]  INFO -- postgresql-trusty: [32m  should not be writable[0m
+I, [2015-09-11T20:24:48.223047 #55678]  INFO -- postgresql-trusty: 
+I, [2015-09-11T20:24:48.223518 #55678]  INFO -- postgresql-trusty: File "/etc/postgresql/9.4/main/pg_hba.conf"
+I, [2015-09-11T20:24:48.229120 #55678]  INFO -- postgresql-trusty: [31m  should be a file (FAILED - 20)[0m
+I, [2015-09-11T20:24:48.236082 #55678]  INFO -- postgresql-trusty: [31m  should be owned by "postgres" (FAILED - 21)[0m
+I, [2015-09-11T20:24:48.243191 #55678]  INFO -- postgresql-trusty: [31m  should be grouped into "postgres" (FAILED - 22)[0m
+I, [2015-09-11T20:24:48.248943 #55678]  INFO -- postgresql-trusty: [31m  should be readable (FAILED - 23)[0m
+I, [2015-09-11T20:24:48.255867 #55678]  INFO -- postgresql-trusty: [31m  should be readable (FAILED - 24)[0m
+I, [2015-09-11T20:24:48.262000 #55678]  INFO -- postgresql-trusty: [31m  should be writable (FAILED - 25)[0m
+I, [2015-09-11T20:24:48.327223 #55678]  INFO -- postgresql-trusty: [32m  should not be readable[0m
+I, [2015-09-11T20:24:48.337221 #55678]  INFO -- postgresql-trusty: [32m  should not be writable[0m
+I, [2015-09-11T20:24:48.337787 #55678]  INFO -- postgresql-trusty: 
+I, [2015-09-11T20:24:48.338639 #55678]  INFO -- postgresql-trusty: File "/var/lib/postgresql"
+I, [2015-09-11T20:24:48.343945 #55678]  INFO -- postgresql-trusty: [31m  should be a directory (FAILED - 26)[0m
+I, [2015-09-11T20:24:48.349134 #55678]  INFO -- postgresql-trusty: [31m  should be owned by "postgres" (FAILED - 27)[0m
+I, [2015-09-11T20:24:48.354498 #55678]  INFO -- postgresql-trusty: [31m  should be grouped into "postgres" (FAILED - 28)[0m
+I, [2015-09-11T20:24:48.358968 #55678]  INFO -- postgresql-trusty: [31m  should be readable (FAILED - 29)[0m
+I, [2015-09-11T20:24:48.364517 #55678]  INFO -- postgresql-trusty: [31m  should be readable (FAILED - 30)[0m
+I, [2015-09-11T20:24:48.369968 #55678]  INFO -- postgresql-trusty: [31m  should be writable (FAILED - 31)[0m
+I, [2015-09-11T20:24:48.430660 #55678]  INFO -- postgresql-trusty: [32m  should not be readable[0m
+I, [2015-09-11T20:24:48.435741 #55678]  INFO -- postgresql-trusty: [32m  should not be writable[0m
+I, [2015-09-11T20:24:48.436131 #55678]  INFO -- postgresql-trusty: 
+I, [2015-09-11T20:24:48.436521 #55678]  INFO -- postgresql-trusty: File "/var/lib/postgresql/9.4/main"
+I, [2015-09-11T20:24:48.442087 #55678]  INFO -- postgresql-trusty: [31m  should be a directory (FAILED - 32)[0m
+I, [2015-09-11T20:24:48.447482 #55678]  INFO -- postgresql-trusty: [31m  should be owned by "postgres" (FAILED - 33)[0m
+I, [2015-09-11T20:24:48.453040 #55678]  INFO -- postgresql-trusty: [31m  should be grouped into "postgres" (FAILED - 34)[0m
+I, [2015-09-11T20:24:48.462063 #55678]  INFO -- postgresql-trusty: [31m  should be readable (FAILED - 35)[0m
+I, [2015-09-11T20:24:48.467119 #55678]  INFO -- postgresql-trusty: [31m  should be readable (FAILED - 36)[0m
+I, [2015-09-11T20:24:48.524800 #55678]  INFO -- postgresql-trusty: [31m  should be writable (FAILED - 37)[0m
+I, [2015-09-11T20:24:48.532473 #55678]  INFO -- postgresql-trusty: [32m  should not be readable[0m
+I, [2015-09-11T20:24:48.540151 #55678]  INFO -- postgresql-trusty: [32m  should not be writable[0m
+I, [2015-09-11T20:24:48.540504 #55678]  INFO -- postgresql-trusty: 
+I, [2015-09-11T20:24:48.542169 #55678]  INFO -- postgresql-trusty: File "/var/run/postgresql/.s.PGSQL.5432"
+I, [2015-09-11T20:24:48.547965 #55678]  INFO -- postgresql-trusty: [31m  should be a socket (FAILED - 38)[0m
+I, [2015-09-11T20:24:48.553281 #55678]  INFO -- postgresql-trusty: [31m  should be owned by "postgres" (FAILED - 39)[0m
+I, [2015-09-11T20:24:48.558794 #55678]  INFO -- postgresql-trusty: [31m  should be grouped into "postgres" (FAILED - 40)[0m
+I, [2015-09-11T20:24:48.564773 #55678]  INFO -- postgresql-trusty: [31m  should be mode 777 (FAILED - 41)[0m
+I, [2015-09-11T20:24:48.564998 #55678]  INFO -- postgresql-trusty: 
+I, [2015-09-11T20:24:48.565353 #55678]  INFO -- postgresql-trusty: File "/var/run/postgresql/9.4-main.pid"
+I, [2015-09-11T20:24:48.570703 #55678]  INFO -- postgresql-trusty: [31m  should be a file (FAILED - 42)[0m
+I, [2015-09-11T20:24:48.632363 #55678]  INFO -- postgresql-trusty: [31m  should be owned by "postgres" (FAILED - 43)[0m
+I, [2015-09-11T20:24:48.639618 #55678]  INFO -- postgresql-trusty: [31m  should be grouped into "postgres" (FAILED - 44)[0m
+I, [2015-09-11T20:24:48.640514 #55678]  INFO -- postgresql-trusty: [31m  example at /tmp/verifier/suites/serverspec/localhost/fs_spec.rb:109 (FAILED - 45)[0m
+I, [2015-09-11T20:24:48.640988 #55678]  INFO -- postgresql-trusty: 
+I, [2015-09-11T20:24:48.641516 #55678]  INFO -- postgresql-trusty: User "postgres"
+I, [2015-09-11T20:24:48.648537 #55678]  INFO -- postgresql-trusty: [31m  should exist (FAILED - 46)[0m
+I, [2015-09-11T20:24:48.655714 #55678]  INFO -- postgresql-trusty: [31m  should belong to group "postgres" (FAILED - 47)[0m
+I, [2015-09-11T20:24:48.656724 #55678]  INFO -- postgresql-trusty: [31m  example at /tmp/verifier/suites/serverspec/localhost/fs_spec.rb:116 (FAILED - 48)[0m
+I, [2015-09-11T20:24:48.657175 #55678]  INFO -- postgresql-trusty: 
+I, [2015-09-11T20:24:48.657556 #55678]  INFO -- postgresql-trusty: Group "postgres"
+I, [2015-09-11T20:24:48.663799 #55678]  INFO -- postgresql-trusty: [31m  should exist (FAILED - 49)[0m
+I, [2015-09-11T20:24:48.664064 #55678]  INFO -- postgresql-trusty: 
+I, [2015-09-11T20:24:48.664533 #55678]  INFO -- postgresql-trusty: Process "postgresql"
+I, [2015-09-11T20:24:48.673189 #55678]  INFO -- postgresql-trusty: [31m  should be running (FAILED - 50)[0m
+I, [2015-09-11T20:24:48.673818 #55678]  INFO -- postgresql-trusty:   user
+I, [2015-09-11T20:24:48.742395 #55678]  INFO -- postgresql-trusty: [31m    should eq "postgres" (FAILED - 51)[0m
+I, [2015-09-11T20:24:48.742871 #55678]  INFO -- postgresql-trusty:   args
+I, [2015-09-11T20:24:48.753307 #55678]  INFO -- postgresql-trusty: [31m    should match /config_file=\/etc\/postgresql\/9.4\/main\/postgresql.conf/ (FAILED - 52)[0m
+I, [2015-09-11T20:24:48.754141 #55678]  INFO -- postgresql-trusty: 
+I, [2015-09-11T20:24:48.754649 #55678]  INFO -- postgresql-trusty: Port "5432"
+I, [2015-09-11T20:24:48.762485 #55678]  INFO -- postgresql-trusty: [31m  should be listening (FAILED - 53)[0m
+I, [2015-09-11T20:24:48.762921 #55678]  INFO -- postgresql-trusty: 
+I, [2015-09-11T20:24:48.763196 #55678]  INFO -- postgresql-trusty: Service "postgresql"
+I, [2015-09-11T20:24:48.769134 #55678]  INFO -- postgresql-trusty: [31m  should be enabled (FAILED - 54)[0m
+I, [2015-09-11T20:24:48.776534 #55678]  INFO -- postgresql-trusty: [31m  should be running (FAILED - 55)[0m
+I, [2015-09-11T20:24:48.858570 #55678]  INFO -- postgresql-trusty: 
+I, [2015-09-11T20:24:48.858874 #55678]  INFO -- postgresql-trusty: Failures:
+I, [2015-09-11T20:24:48.859179 #55678]  INFO -- postgresql-trusty: 
+I, [2015-09-11T20:24:48.859550 #55678]  INFO -- postgresql-trusty:   1) Package "postgresql-9.4" should be installed
+I, [2015-09-11T20:24:48.859883 #55678]  INFO -- postgresql-trusty:      [31mFailure/Error: it { should be_installed }[0m
+I, [2015-09-11T20:24:48.860167 #55678]  INFO -- postgresql-trusty:      [31m  expected Package "postgresql-9.4" to be installed[0m
+I, [2015-09-11T20:24:48.860463 #55678]  INFO -- postgresql-trusty:      [31m  /bin/sh -c dpkg-query\ -f\ \'\$\{Status\}\'\ -W\ postgresql-9.4\ \|\ grep\ -E\ \'\^\(install\|hold\)\ ok\ installed\$\'[0m
+I, [2015-09-11T20:24:48.860820 #55678]  INFO -- postgresql-trusty:      [31m  [0m
+I, [2015-09-11T20:24:48.861146 #55678]  INFO -- postgresql-trusty:      [36m# /tmp/verifier/suites/serverspec/localhost/fs_spec.rb:6:in `block (2 levels) in <top (required)>'[0m
+I, [2015-09-11T20:24:48.861419 #55678]  INFO -- postgresql-trusty: 
+I, [2015-09-11T20:24:48.861639 #55678]  INFO -- postgresql-trusty:   2) File "/etc/postgresql" should be a directory
+I, [2015-09-11T20:24:48.862898 #55678]  INFO -- postgresql-trusty:      [31mFailure/Error: it { should be_a_directory }[0m
+I, [2015-09-11T20:24:48.862965 #55678]  INFO -- postgresql-trusty:      [31m  expected `File "/etc/postgresql".directory?` to return true, got false[0m
+I, [2015-09-11T20:24:48.862995 #55678]  INFO -- postgresql-trusty:      [31m  /bin/sh -c test\ -d\ /etc/postgresql[0m
+I, [2015-09-11T20:24:48.863022 #55678]  INFO -- postgresql-trusty:      [31m  [0m
+I, [2015-09-11T20:24:48.863048 #55678]  INFO -- postgresql-trusty:      [36m# /tmp/verifier/suites/serverspec/localhost/fs_spec.rb:11:in `block (2 levels) in <top (required)>'[0m
+I, [2015-09-11T20:24:48.863071 #55678]  INFO -- postgresql-trusty: 
+I, [2015-09-11T20:24:48.863095 #55678]  INFO -- postgresql-trusty:   3) File "/etc/postgresql" should be owned by "postgres"
+I, [2015-09-11T20:24:48.863120 #55678]  INFO -- postgresql-trusty:      [31mFailure/Error: it { should be_owned_by 'postgres' }[0m
+I, [2015-09-11T20:24:48.863144 #55678]  INFO -- postgresql-trusty:      [31m  expected `File "/etc/postgresql".owned_by?("postgres")` to return true, got false[0m
+I, [2015-09-11T20:24:48.863168 #55678]  INFO -- postgresql-trusty:      [31m  /bin/sh -c stat\ -c\ \%U\ /etc/postgresql\ \|\ grep\ --\ \\\^postgres\\\$[0m
+I, [2015-09-11T20:24:48.863194 #55678]  INFO -- postgresql-trusty:      [31m  [0m
+I, [2015-09-11T20:24:48.863215 #55678]  INFO -- postgresql-trusty:      [36m# /tmp/verifier/suites/serverspec/localhost/fs_spec.rb:12:in `block (2 levels) in <top (required)>'[0m
+I, [2015-09-11T20:24:48.863239 #55678]  INFO -- postgresql-trusty: 
+I, [2015-09-11T20:24:48.863263 #55678]  INFO -- postgresql-trusty:   4) File "/etc/postgresql" should be grouped into "postgres"
+I, [2015-09-11T20:24:48.863287 #55678]  INFO -- postgresql-trusty:      [31mFailure/Error: it { should be_grouped_into 'postgres' } ## %postgres will be used to grant RO[0m
+I, [2015-09-11T20:24:48.863311 #55678]  INFO -- postgresql-trusty:      [31m  expected `File "/etc/postgresql".grouped_into?("postgres")` to return true, got false[0m
+I, [2015-09-11T20:24:48.863337 #55678]  INFO -- postgresql-trusty:      [31m  /bin/sh -c stat\ -c\ \%G\ /etc/postgresql\ \|\ grep\ --\ \\\^postgres\\\$[0m
+I, [2015-09-11T20:24:48.863360 #55678]  INFO -- postgresql-trusty:      [31m  [0m
+I, [2015-09-11T20:24:48.863383 #55678]  INFO -- postgresql-trusty:      [36m# /tmp/verifier/suites/serverspec/localhost/fs_spec.rb:13:in `block (2 levels) in <top (required)>'[0m
+I, [2015-09-11T20:24:48.863408 #55678]  INFO -- postgresql-trusty: 
+I, [2015-09-11T20:24:48.863429 #55678]  INFO -- postgresql-trusty:   5) File "/etc/postgresql" should be readable
+I, [2015-09-11T20:24:48.863452 #55678]  INFO -- postgresql-trusty:      [31mFailure/Error: it { should be_readable.by('owner') }[0m
+I, [2015-09-11T20:24:48.863477 #55678]  INFO -- postgresql-trusty:      [31m  expected File "/etc/postgresql" to be readable[0m
+I, [2015-09-11T20:24:48.863499 #55678]  INFO -- postgresql-trusty:      [31m  /bin/sh -c stat\ -c\ \%a\ /etc/postgresql[0m
+I, [2015-09-11T20:24:48.863524 #55678]  INFO -- postgresql-trusty:      [31m  [0m
+I, [2015-09-11T20:24:48.863546 #55678]  INFO -- postgresql-trusty:      [36m# /tmp/verifier/suites/serverspec/localhost/fs_spec.rb:15:in `block (2 levels) in <top (required)>'[0m
+I, [2015-09-11T20:24:48.863569 #55678]  INFO -- postgresql-trusty: 
+I, [2015-09-11T20:24:48.863593 #55678]  INFO -- postgresql-trusty:   6) File "/etc/postgresql" should be readable
+I, [2015-09-11T20:24:48.863614 #55678]  INFO -- postgresql-trusty:      [31mFailure/Error: it { should be_readable.by('group') }[0m
+I, [2015-09-11T20:24:48.863638 #55678]  INFO -- postgresql-trusty:      [31m  expected File "/etc/postgresql" to be readable[0m
+I, [2015-09-11T20:24:48.863714 #55678]  INFO -- postgresql-trusty:      [31m  /bin/sh -c stat\ -c\ \%a\ /etc/postgresql[0m
+I, [2015-09-11T20:24:48.863744 #55678]  INFO -- postgresql-trusty:      [31m  [0m
+I, [2015-09-11T20:24:48.863767 #55678]  INFO -- postgresql-trusty:      [36m# /tmp/verifier/suites/serverspec/localhost/fs_spec.rb:16:in `block (2 levels) in <top (required)>'[0m
+I, [2015-09-11T20:24:48.863792 #55678]  INFO -- postgresql-trusty: 
+I, [2015-09-11T20:24:48.863816 #55678]  INFO -- postgresql-trusty:   7) File "/etc/postgresql" should be writable
+I, [2015-09-11T20:24:48.863838 #55678]  INFO -- postgresql-trusty:      [31mFailure/Error: it { should be_writable.by('owner') }[0m
+I, [2015-09-11T20:24:48.863863 #55678]  INFO -- postgresql-trusty:      [31m  expected File "/etc/postgresql" to be writable[0m
+I, [2015-09-11T20:24:48.863888 #55678]  INFO -- postgresql-trusty:      [31m  /bin/sh -c stat\ -c\ \%a\ /etc/postgresql[0m
+I, [2015-09-11T20:24:48.863911 #55678]  INFO -- postgresql-trusty:      [31m  [0m
+I, [2015-09-11T20:24:48.863933 #55678]  INFO -- postgresql-trusty:      [36m# /tmp/verifier/suites/serverspec/localhost/fs_spec.rb:18:in `block (2 levels) in <top (required)>'[0m
+I, [2015-09-11T20:24:48.863957 #55678]  INFO -- postgresql-trusty: 
+I, [2015-09-11T20:24:48.863980 #55678]  INFO -- postgresql-trusty:   8) File "/etc/postgresql/9.4/main" should be a directory
+I, [2015-09-11T20:24:48.864003 #55678]  INFO -- postgresql-trusty:      [31mFailure/Error: it { should be_a_directory }[0m
+I, [2015-09-11T20:24:48.864027 #55678]  INFO -- postgresql-trusty:      [31m  expected `File "/etc/postgresql/9.4/main".directory?` to return true, got false[0m
+I, [2015-09-11T20:24:48.864051 #55678]  INFO -- postgresql-trusty:      [31m  /bin/sh -c test\ -d\ /etc/postgresql/9.4/main[0m
+I, [2015-09-11T20:24:48.864074 #55678]  INFO -- postgresql-trusty:      [31m  [0m
+I, [2015-09-11T20:24:48.864096 #55678]  INFO -- postgresql-trusty:      [36m# /tmp/verifier/suites/serverspec/localhost/fs_spec.rb:25:in `block (2 levels) in <top (required)>'[0m
+I, [2015-09-11T20:24:48.864168 #55678]  INFO -- postgresql-trusty: 
+I, [2015-09-11T20:24:48.864196 #55678]  INFO -- postgresql-trusty:   9) File "/etc/postgresql/9.4/main" should be owned by "postgres"
+I, [2015-09-11T20:24:48.864220 #55678]  INFO -- postgresql-trusty:      [31mFailure/Error: it { should be_owned_by 'postgres' }[0m
+I, [2015-09-11T20:24:48.864246 #55678]  INFO -- postgresql-trusty:      [31m  expected `File "/etc/postgresql/9.4/main".owned_by?("postgres")` to return true, got false[0m
+I, [2015-09-11T20:24:48.864270 #55678]  INFO -- postgresql-trusty:      [31m  /bin/sh -c stat\ -c\ \%U\ /etc/postgresql/9.4/main\ \|\ grep\ --\ \\\^postgres\\\$[0m
+I, [2015-09-11T20:24:48.864294 #55678]  INFO -- postgresql-trusty:      [31m  [0m
+I, [2015-09-11T20:24:48.864318 #55678]  INFO -- postgresql-trusty:      [36m# /tmp/verifier/suites/serverspec/localhost/fs_spec.rb:26:in `block (2 levels) in <top (required)>'[0m
+I, [2015-09-11T20:24:48.864340 #55678]  INFO -- postgresql-trusty: 
+I, [2015-09-11T20:24:48.864363 #55678]  INFO -- postgresql-trusty:   10) File "/etc/postgresql/9.4/main" should be grouped into "postgres"
+I, [2015-09-11T20:24:48.864388 #55678]  INFO -- postgresql-trusty:       [31mFailure/Error: it { should be_grouped_into 'postgres' }[0m
+I, [2015-09-11T20:24:48.864412 #55678]  INFO -- postgresql-trusty:       [31m  expected `File "/etc/postgresql/9.4/main".grouped_into?("postgres")` to return true, got false[0m
+I, [2015-09-11T20:24:48.864435 #55678]  INFO -- postgresql-trusty:       [31m  /bin/sh -c stat\ -c\ \%G\ /etc/postgresql/9.4/main\ \|\ grep\ --\ \\\^postgres\\\$[0m
+I, [2015-09-11T20:24:48.864459 #55678]  INFO -- postgresql-trusty:       [31m  [0m
+I, [2015-09-11T20:24:48.864482 #55678]  INFO -- postgresql-trusty:       [36m# /tmp/verifier/suites/serverspec/localhost/fs_spec.rb:27:in `block (2 levels) in <top (required)>'[0m
+I, [2015-09-11T20:24:48.864505 #55678]  INFO -- postgresql-trusty: 
+I, [2015-09-11T20:24:48.864528 #55678]  INFO -- postgresql-trusty:   11) File "/etc/postgresql/9.4/main" should be readable
+I, [2015-09-11T20:24:48.864566 #55678]  INFO -- postgresql-trusty:       [31mFailure/Error: it { should be_readable.by('owner') }[0m
+I, [2015-09-11T20:24:48.864592 #55678]  INFO -- postgresql-trusty:       [31m  expected File "/etc/postgresql/9.4/main" to be readable[0m
+I, [2015-09-11T20:24:48.864648 #55678]  INFO -- postgresql-trusty:       [31m  /bin/sh -c stat\ -c\ \%a\ /etc/postgresql/9.4/main[0m
+I, [2015-09-11T20:24:48.864676 #55678]  INFO -- postgresql-trusty:       [31m  [0m
+I, [2015-09-11T20:24:48.868986 #55678]  INFO -- postgresql-trusty: :29:in `block (2 levels) in <top (required)>'[0m
+I, [2015-09-11T20:24:48.869031 #55678]  INFO -- postgresql-trusty: 
+I, [2015-09-11T20:24:48.869047 #55678]  INFO -- postgresql-trusty:   12) File "/etc/postgresql/9.4/main" should be readable
+I, [2015-09-11T20:24:48.869071 #55678]  INFO -- postgresql-trusty:       [31mFailure/Error: it { should be_readable.by('group') }[0m
+I, [2015-09-11T20:24:48.869084 #55678]  INFO -- postgresql-trusty:       [31m  expected File "/etc/postgresql/9.4/main" to be readable[0m
+I, [2015-09-11T20:24:48.869096 #55678]  INFO -- postgresql-trusty:       [31m  /bin/sh -c stat\ -c\ \%a\ /etc/postgresql/9.4/main[0m
+I, [2015-09-11T20:24:48.869108 #55678]  INFO -- postgresql-trusty:       [31m  [0m
+I, [2015-09-11T20:24:48.869120 #55678]  INFO -- postgresql-trusty:       [36m# /tmp/verifier/suites/serverspec/localhost/fs_spec.rb:30:in `block (2 levels) in <top (required)>'[0m
+I, [2015-09-11T20:24:48.869131 #55678]  INFO -- postgresql-trusty: 
+I, [2015-09-11T20:24:48.869146 #55678]  INFO -- postgresql-trusty:   13) File "/etc/postgresql/9.4/main" should be writable
+I, [2015-09-11T20:24:48.869158 #55678]  INFO -- postgresql-trusty:       [31mFailure/Error: it { should be_writable.by('owner') }[0m
+I, [2015-09-11T20:24:48.869170 #55678]  INFO -- postgresql-trusty:       [31m  expected File "/etc/postgresql/9.4/main" to be writable[0m
+I, [2015-09-11T20:24:48.869182 #55678]  INFO -- postgresql-trusty:       [31m  /bin/sh -c stat\ -c\ \%a\ /etc/postgresql/9.4/main[0m
+I, [2015-09-11T20:24:48.869194 #55678]  INFO -- postgresql-trusty:       [31m  [0m
+I, [2015-09-11T20:24:48.869205 #55678]  INFO -- postgresql-trusty:       [36m# /tmp/verifier/suites/serverspec/localhost/fs_spec.rb:32:in `block (2 levels) in <top (required)>'[0m
+I, [2015-09-11T20:24:48.869216 #55678]  INFO -- postgresql-trusty: 
+I, [2015-09-11T20:24:48.869227 #55678]  INFO -- postgresql-trusty:   14) File "/etc/postgresql/9.4/main/postgresql.conf" should be a file
+I, [2015-09-11T20:24:48.869239 #55678]  INFO -- postgresql-trusty:       [31mFailure/Error: it { should be_a_file }[0m
+I, [2015-09-11T20:24:48.869253 #55678]  INFO -- postgresql-trusty:       [31m  expected `File "/etc/postgresql/9.4/main/postgresql.conf".file?` to return true, got false[0m
+I, [2015-09-11T20:24:48.869266 #55678]  INFO -- postgresql-trusty:       [31m  /bin/sh -c test\ -f\ /etc/postgresql/9.4/main/postgresql.conf[0m
+I, [2015-09-11T20:24:48.869277 #55678]  INFO -- postgresql-trusty:       [31m  [0m
+I, [2015-09-11T20:24:48.869288 #55678]  INFO -- postgresql-trusty:       [36m# /tmp/verifier/suites/serverspec/localhost/fs_spec.rb:39:in `block (2 levels) in <top (required)>'[0m
+I, [2015-09-11T20:24:48.869300 #55678]  INFO -- postgresql-trusty: 
+I, [2015-09-11T20:24:48.869311 #55678]  INFO -- postgresql-trusty:   15) File "/etc/postgresql/9.4/main/postgresql.conf" should be owned by "postgres"
+I, [2015-09-11T20:24:48.869322 #55678]  INFO -- postgresql-trusty:       [31mFailure/Error: it { should be_owned_by 'postgres' }[0m
+I, [2015-09-11T20:24:48.869334 #55678]  INFO -- postgresql-trusty:       [31m  expected `File "/etc/postgresql/9.4/main/postgresql.conf".owned_by?("postgres")` to return true, got false[0m
+I, [2015-09-11T20:24:48.869346 #55678]  INFO -- postgresql-trusty:       [31m  /bin/sh -c stat\ -c\ \%U\ /etc/postgresql/9.4/main/postgresql.conf\ \|\ grep\ --\ \\\^postgres\\\$[0m
+I, [2015-09-11T20:24:48.869379 #55678]  INFO -- postgresql-trusty:       [31m  [0m
+I, [2015-09-11T20:24:48.869393 #55678]  INFO -- postgresql-trusty:       [36m# /tmp/verifier/suites/serverspec/localhost/fs_spec.rb:40:in `block (2 levels) in <top (required)>'[0m
+I, [2015-09-11T20:24:48.869405 #55678]  INFO -- postgresql-trusty: 
+I, [2015-09-11T20:24:48.869416 #55678]  INFO -- postgresql-trusty:   16) File "/etc/postgresql/9.4/main/postgresql.conf" should be grouped into "postgres"
+I, [2015-09-11T20:24:48.869428 #55678]  INFO -- postgresql-trusty:       [31mFailure/Error: it { should be_grouped_into 'postgres' }[0m
+I, [2015-09-11T20:24:48.869440 #55678]  INFO -- postgresql-trusty:       [31m  expected `File "/etc/postgresql/9.4/main/postgresql.conf".grouped_into?("postgres")` to return true, got false[0m
+I, [2015-09-11T20:24:48.869452 #55678]  INFO -- postgresql-trusty:       [31m  /bin/sh -c stat\ -c\ \%G\ /etc/postgresql/9.4/main/postgresql.conf\ \|\ grep\ --\ \\\^postgres\\\$[0m
+I, [2015-09-11T20:24:48.869464 #55678]  INFO -- postgresql-trusty:       [31m  [0m
+I, [2015-09-11T20:24:48.869475 #55678]  INFO -- postgresql-trusty:       [36m# /tmp/verifier/suites/serverspec/localhost/fs_spec.rb:41:in `block (2 levels) in <top (required)>'[0m
+I, [2015-09-11T20:24:48.869500 #55678]  INFO -- postgresql-trusty: 
+I, [2015-09-11T20:24:48.869512 #55678]  INFO -- postgresql-trusty:   17) File "/etc/postgresql/9.4/main/postgresql.conf" should be readable
+I, [2015-09-11T20:24:48.869524 #55678]  INFO -- postgresql-trusty:       [31mFailure/Error: it { should be_readable.by('owner') }[0m
+I, [2015-09-11T20:24:48.869536 #55678]  INFO -- postgresql-trusty:       [31m  expected File "/etc/postgresql/9.4/main/postgresql.conf" to be readable[0m
+I, [2015-09-11T20:24:48.869548 #55678]  INFO -- postgresql-trusty:       [31m  /bin/sh -c stat\ -c\ \%a\ /etc/postgresql/9.4/main/postgresql.conf[0m
+I, [2015-09-11T20:24:48.869559 #55678]  INFO -- postgresql-trusty:       [31m  [0m
+I, [2015-09-11T20:24:48.869571 #55678]  INFO -- postgresql-trusty:       [36m# /tmp/verifier/suites/serverspec/localhost/fs_spec.rb:43:in `block (2 levels) in <top (required)>'[0m
+I, [2015-09-11T20:24:48.869582 #55678]  INFO -- postgresql-trusty: 
+I, [2015-09-11T20:24:48.869593 #55678]  INFO -- postgresql-trusty:   18) File "/etc/postgresql/9.4/main/postgresql.conf" should be readable
+I, [2015-09-11T20:24:48.869607 #55678]  INFO -- postgresql-trusty:       [31mFailure/Error: it { should be_readable.by('group') }[0m
+I, [2015-09-11T20:24:48.869619 #55678]  INFO -- postgresql-trusty:       [31m  expected File "/etc/postgresql/9.4/main/postgresql.conf" to be readable[0m
+I, [2015-09-11T20:24:48.869631 #55678]  INFO -- postgresql-trusty:       [31m  /bin/sh -c stat\ -c\ \%a\ /etc/postgresql/9.4/main/postgresql.conf[0m
+I, [2015-09-11T20:24:48.869642 #55678]  INFO -- postgresql-trusty:       [31m  [0m
+I, [2015-09-11T20:24:48.869658 #55678]  INFO -- postgresql-trusty:       [36m# /tmp/verifier/suites/serverspec/localhost/fs_spec.rb:44:in `block (2 levels) in <top (required)>'[0m
+I, [2015-09-11T20:24:48.869678 #55678]  INFO -- postgresql-trusty: 
+I, [2015-09-11T20:24:48.869697 #55678]  INFO -- postgresql-trusty:   19) File "/etc/postgresql/9.4/main/postgresql.conf" should be writable
+I, [2015-09-11T20:24:48.869718 #55678]  INFO -- postgresql-trusty:       [31mFailure/Error: it { should be_writable.by('owner') }[0m
+I, [2015-09-11T20:24:48.869739 #55678]  INFO -- postgresql-trusty:       [31m  expected File "/etc/postgresql/9.4/main/postgresql.conf" to be writable[0m
+I, [2015-09-11T20:24:48.869766 #55678]  INFO -- postgresql-trusty:       [31m  /bin/sh -c stat\ -c\ \%a\ /etc/postgresql/9.4/main/postgresql.conf[0m
+I, [2015-09-11T20:24:48.869789 #55678]  INFO -- postgresql-trusty:       [31m  [0m
+I, [2015-09-11T20:24:48.869810 #55678]  INFO -- postgresql-trusty:       [36m# /tmp/verifier/suites/serverspec/localhost/fs_spec.rb:46:in `block (2 levels) in <top (required)>'[0m
+I, [2015-09-11T20:24:48.869832 #55678]  INFO -- postgresql-trusty: 
+I, [2015-09-11T20:24:48.869863 #55678]  INFO -- postgresql-trusty:   20) File "/etc/postgresql/9.4/main/pg_hba.conf" should be a file
+I, [2015-09-11T20:24:48.869886 #55678]  INFO -- postgresql-trusty:       [31mFailure/Error: it { should be_a_file }[0m
+I, [2015-09-11T20:24:48.869917 #55678]  INFO -- postgresql-trusty:       [31m  expected `File "/etc/postgresql/9.4/main/pg_hba.conf".file?` to return true, got false[0m
+I, [2015-09-11T20:24:48.869938 #55678]  INFO -- postgresql-trusty:       [31m  /bin/sh -c test\ -f\ /etc/postgresql/9.4/main/pg_hba.conf[0m
+I, [2015-09-11T20:24:48.869958 #55678]  INFO -- postgresql-trusty:       [31m  [0m
+I, [2015-09-11T20:24:48.871296 #55678]  INFO -- postgresql-trusty: # /tmp/verifier/suites/serverspec/localhost/fs_spec.rb:53:in `block (2 levels) in <top (required)>'[0m
+I, [2015-09-11T20:24:48.871347 #55678]  INFO -- postgresql-trusty: 
+I, [2015-09-11T20:24:48.871379 #55678]  INFO -- postgresql-trusty:   21) File "/etc/postgresql/9.4/main/pg_hba.conf" should be owned by "postgres"
+I, [2015-09-11T20:24:48.871408 #55678]  INFO -- postgresql-trusty:       [31mFailure/Error: it { should be_owned_by 'postgres' }[0m
+I, [2015-09-11T20:24:48.871437 #55678]  INFO -- postgresql-trusty:       [31m  expected `File "/etc/postgresql/9.4/main/pg_hba.conf".owned_by?("postgres")` to return true, got false[0m
+I, [2015-09-11T20:24:48.871469 #55678]  INFO -- postgresql-trusty:       [31m  /bin/sh -c stat\ -c\ \%U\ /etc/postgresql/9.4/main/pg_hba.conf\ \|\ grep\ --\ \\\^postgres\\\$[0m
+I, [2015-09-11T20:24:48.871497 #55678]  INFO -- postgresql-trusty:       [31m  [0m
+I, [2015-09-11T20:24:48.871525 #55678]  INFO -- postgresql-trusty:       [36m# /tmp/verifier/suites/serverspec/localhost/fs_spec.rb:54:in `block (2 levels) in <top (required)>'[0m
+I, [2015-09-11T20:24:48.871552 #55678]  INFO -- postgresql-trusty: 
+I, [2015-09-11T20:24:48.871577 #55678]  INFO -- postgresql-trusty:   22) File "/etc/postgresql/9.4/main/pg_hba.conf" should be grouped into "postgres"
+I, [2015-09-11T20:24:48.871603 #55678]  INFO -- postgresql-trusty:       [31mFailure/Error: it { should be_grouped_into 'postgres' }[0m
+I, [2015-09-11T20:24:48.871629 #55678]  INFO -- postgresql-trusty:       [31m  expected `File "/etc/postgresql/9.4/main/pg_hba.conf".grouped_into?("postgres")` to return true, got false[0m
+I, [2015-09-11T20:24:48.871654 #55678]  INFO -- postgresql-trusty:       [31m  /bin/sh -c stat\ -c\ \%G\ /etc/postgresql/9.4/main/pg_hba.conf\ \|\ grep\ --\ \\\^postgres\\\$[0m
+I, [2015-09-11T20:24:48.871678 #55678]  INFO -- postgresql-trusty:       [31m  [0m
+I, [2015-09-11T20:24:48.871700 #55678]  INFO -- postgresql-trusty:       [36m# /tmp/verifier/suites/serverspec/localhost/fs_spec.rb:55:in `block (2 levels) in <top (required)>'[0m
+I, [2015-09-11T20:24:48.871727 #55678]  INFO -- postgresql-trusty: 
+I, [2015-09-11T20:24:48.871747 #55678]  INFO -- postgresql-trusty:   23) File "/etc/postgresql/9.4/main/pg_hba.conf" should be readable
+I, [2015-09-11T20:24:48.871769 #55678]  INFO -- postgresql-trusty:       [31mFailure/Error: it { should be_readable.by('owner') }[0m
+I, [2015-09-11T20:24:48.871789 #55678]  INFO -- postgresql-trusty:       [31m  expected File "/etc/postgresql/9.4/main/pg_hba.conf" to be readable[0m
+I, [2015-09-11T20:24:48.871809 #55678]  INFO -- postgresql-trusty:       [31m  /bin/sh -c stat\ -c\ \%a\ /etc/postgresql/9.4/main/pg_hba.conf[0m
+I, [2015-09-11T20:24:48.871829 #55678]  INFO -- postgresql-trusty:       [31m  [0m
+I, [2015-09-11T20:24:48.871941 #55678]  INFO -- postgresql-trusty:       [36m# /tmp/verifier/suites/serverspec/localhost/fs_spec.rb:57:in `block (2 levels) in <top (required)>'[0m
+I, [2015-09-11T20:24:48.871980 #55678]  INFO -- postgresql-trusty: 
+I, [2015-09-11T20:24:48.872011 #55678]  INFO -- postgresql-trusty:   24) File "/etc/postgresql/9.4/main/pg_hba.conf" should be readable
+I, [2015-09-11T20:24:48.872034 #55678]  INFO -- postgresql-trusty:       [31mFailure/Error: it { should be_readable.by('group') }[0m
+I, [2015-09-11T20:24:48.872061 #55678]  INFO -- postgresql-trusty:       [31m  expected File "/etc/postgresql/9.4/main/pg_hba.conf" to be readable[0m
+I, [2015-09-11T20:24:48.872138 #55678]  INFO -- postgresql-trusty:       [31m  /bin/sh -c stat\ -c\ \%a\ /etc/postgresql/9.4/main/pg_hba.conf[0m
+I, [2015-09-11T20:24:48.872172 #55678]  INFO -- postgresql-trusty:       [31m  [0m
+I, [2015-09-11T20:24:48.872194 #55678]  INFO -- postgresql-trusty:       [36m# /tmp/verifier/suites/serverspec/localhost/fs_spec.rb:58:in `block (2 levels) in <top (required)>'[0m
+I, [2015-09-11T20:24:48.872217 #55678]  INFO -- postgresql-trusty: 
+I, [2015-09-11T20:24:48.872246 #55678]  INFO -- postgresql-trusty:   25) File "/etc/postgresql/9.4/main/pg_hba.conf" should be writable
+I, [2015-09-11T20:24:48.872271 #55678]  INFO -- postgresql-trusty:       [31mFailure/Error: it { should be_writable.by('owner') }[0m
+I, [2015-09-11T20:24:48.872293 #55678]  INFO -- postgresql-trusty:       [31m  expected File "/etc/postgresql/9.4/main/pg_hba.conf" to be writable[0m
+I, [2015-09-11T20:24:48.872315 #55678]  INFO -- postgresql-trusty:       [31m  /bin/sh -c stat\ -c\ \%a\ /etc/postgresql/9.4/main/pg_hba.conf[0m
+I, [2015-09-11T20:24:48.872342 #55678]  INFO -- postgresql-trusty:       [31m  [0m
+I, [2015-09-11T20:24:48.872363 #55678]  INFO -- postgresql-trusty:       [36m# /tmp/verifier/suites/serverspec/localhost/fs_spec.rb:60:in `block (2 levels) in <top (required)>'[0m
+I, [2015-09-11T20:24:48.872384 #55678]  INFO -- postgresql-trusty: 
+I, [2015-09-11T20:24:48.872405 #55678]  INFO -- postgresql-trusty:   26) File "/var/lib/postgresql" should be a directory
+I, [2015-09-11T20:24:48.872426 #55678]  INFO -- postgresql-trusty:       [31mFailure/Error: it { should be_a_directory }[0m
+I, [2015-09-11T20:24:48.872448 #55678]  INFO -- postgresql-trusty:       [31m  expected `File "/var/lib/postgresql".directory?` to return true, got false[0m
+I, [2015-09-11T20:24:48.872469 #55678]  INFO -- postgresql-trusty:       [31m  /bin/sh -c test\ -d\ /var/lib/postgresql[0m
+I, [2015-09-11T20:24:48.872491 #55678]  INFO -- postgresql-trusty:       [31m  [0m
+I, [2015-09-11T20:24:48.872511 #55678]  INFO -- postgresql-trusty:       [36m# /tmp/verifier/suites/serverspec/localhost/fs_spec.rb:68:in `block (2 levels) in <top (required)>'[0m
+I, [2015-09-11T20:24:48.872535 #55678]  INFO -- postgresql-trusty: 
+I, [2015-09-11T20:24:48.872556 #55678]  INFO -- postgresql-trusty:   27) File "/var/lib/postgresql" should be owned by "postgres"
+I, [2015-09-11T20:24:48.872577 #55678]  INFO -- postgresql-trusty:       [31mFailure/Error: it { should be_owned_by 'postgres' }[0m
+I, [2015-09-11T20:24:48.872599 #55678]  INFO -- postgresql-trusty:       [31m  expected `File "/var/lib/postgresql".owned_by?("postgres")` to return true, got false[0m
+I, [2015-09-11T20:24:48.872622 #55678]  INFO -- postgresql-trusty:       [31m  /bin/sh -c stat\ -c\ \%U\ /var/lib/postgresql\ \|\ grep\ --\ \\\^postgres\\\$[0m
+I, [2015-09-11T20:24:48.872643 #55678]  INFO -- postgresql-trusty:       [31m  [0m
+I, [2015-09-11T20:24:48.872664 #55678]  INFO -- postgresql-trusty:       [36m# /tmp/verifier/suites/serverspec/localhost/fs_spec.rb:69:in `block (2 levels) in <top (required)>'[0m
+I, [2015-09-11T20:24:48.872684 #55678]  INFO -- postgresql-trusty: 
+I, [2015-09-11T20:24:48.872704 #55678]  INFO -- postgresql-trusty:   28) File "/var/lib/postgresql" should be grouped into "postgres"
+I, [2015-09-11T20:24:48.872731 #55678]  INFO -- postgresql-trusty:       [31mFailure/Error: it { should be_grouped_into 'postgres' }[0m
+I, [2015-09-11T20:24:48.872756 #55678]  INFO -- postgresql-trusty:       [31m  expected `File "/var/lib/postgresql".grouped_into?("postgres")` to return true, got false[0m
+I, [2015-09-11T20:24:48.872779 #55678]  INFO -- postgresql-trusty:       [31m  /bin/sh -c stat\ -c\ \%G\ /var/lib/postgresql\ \|\ grep\ --\ \\\^postgres\\\$[0m
+I, [2015-09-11T20:24:48.872800 #55678]  INFO -- postgresql-trusty:       [31m  [0m
+I, [2015-09-11T20:24:48.872819 #55678]  INFO -- postgresql-trusty:       [36m# /tmp/verifier/suites/serverspec/localhost/fs_spec.rb:70:in `block (2 levels) in <top (required)>'[0m
+I, [2015-09-11T20:24:48.872898 #55678]  INFO -- postgresql-trusty: 
+I, [2015-09-11T20:24:48.872913 #55678]  INFO -- postgresql-trusty:   29) File "/var/lib/postgresql" should be readable
+I, [2015-09-11T20:24:48.872924 #55678]  INFO -- postgresql-trusty:       [31mFailure/Error: it { should be_readable.by('owner') }[0m
+I, [2015-09-11T20:24:48.872937 #55678]  INFO -- postgresql-trusty:       [31m  expected File "/var/lib/postgresql" to be readable[0m
+I, [2015-09-11T20:24:48.874262 #55678]  INFO -- postgresql-trusty: m
+I, [2015-09-11T20:24:48.874315 #55678]  INFO -- postgresql-trusty:       [31m  [0m
+I, [2015-09-11T20:24:48.874344 #55678]  INFO -- postgresql-trusty:       [36m# /tmp/verifier/suites/serverspec/localhost/fs_spec.rb:72:in `block (2 levels) in <top (required)>'[0m
+I, [2015-09-11T20:24:48.874369 #55678]  INFO -- postgresql-trusty: 
+I, [2015-09-11T20:24:48.874394 #55678]  INFO -- postgresql-trusty:   30) File "/var/lib/postgresql" should be readable
+I, [2015-09-11T20:24:48.874416 #55678]  INFO -- postgresql-trusty:       [31mFailure/Error: it { should be_readable.by('group') }[0m
+I, [2015-09-11T20:24:48.874434 #55678]  INFO -- postgresql-trusty:       [31m  expected File "/var/lib/postgresql" to be readable[0m
+I, [2015-09-11T20:24:48.874474 #55678]  INFO -- postgresql-trusty:       [31m  /bin/sh -c stat\ -c\ \%a\ /var/lib/postgresql[0m
+I, [2015-09-11T20:24:48.874501 #55678]  INFO -- postgresql-trusty:       [31m  [0m
+I, [2015-09-11T20:24:48.874523 #55678]  INFO -- postgresql-trusty:       [36m# /tmp/verifier/suites/serverspec/localhost/fs_spec.rb:73:in `block (2 levels) in <top (required)>'[0m
+I, [2015-09-11T20:24:48.874545 #55678]  INFO -- postgresql-trusty: 
+I, [2015-09-11T20:24:48.874633 #55678]  INFO -- postgresql-trusty:   31) File "/var/lib/postgresql" should be writable
+I, [2015-09-11T20:24:48.874659 #55678]  INFO -- postgresql-trusty:       [31mFailure/Error: it { should be_writable.by('owner') }[0m
+I, [2015-09-11T20:24:48.874685 #55678]  INFO -- postgresql-trusty:       [31m  expected File "/var/lib/postgresql" to be writable[0m
+I, [2015-09-11T20:24:48.874703 #55678]  INFO -- postgresql-trusty:       [31m  /bin/sh -c stat\ -c\ \%a\ /var/lib/postgresql[0m
+I, [2015-09-11T20:24:48.874716 #55678]  INFO -- postgresql-trusty:       [31m  [0m
+I, [2015-09-11T20:24:48.874728 #55678]  INFO -- postgresql-trusty:       [36m# /tmp/verifier/suites/serverspec/localhost/fs_spec.rb:75:in `block (2 levels) in <top (required)>'[0m
+I, [2015-09-11T20:24:48.874745 #55678]  INFO -- postgresql-trusty: 
+I, [2015-09-11T20:24:48.874760 #55678]  INFO -- postgresql-trusty:   32) File "/var/lib/postgresql/9.4/main" should be a directory
+I, [2015-09-11T20:24:48.874774 #55678]  INFO -- postgresql-trusty:       [31mFailure/Error: it { should be_a_directory }[0m
+I, [2015-09-11T20:24:48.874788 #55678]  INFO -- postgresql-trusty:       [31m  expected `File "/var/lib/postgresql/9.4/main".directory?` to return true, got false[0m
+I, [2015-09-11T20:24:48.874801 #55678]  INFO -- postgresql-trusty:       [31m  /bin/sh -c test\ -d\ /var/lib/postgresql/9.4/main[0m
+I, [2015-09-11T20:24:48.874813 #55678]  INFO -- postgresql-trusty:       [31m  [0m
+I, [2015-09-11T20:24:48.874826 #55678]  INFO -- postgresql-trusty:       [36m# /tmp/verifier/suites/serverspec/localhost/fs_spec.rb:82:in `block (2 levels) in <top (required)>'[0m
+I, [2015-09-11T20:24:48.874841 #55678]  INFO -- postgresql-trusty: 
+I, [2015-09-11T20:24:48.874854 #55678]  INFO -- postgresql-trusty:   33) File "/var/lib/postgresql/9.4/main" should be owned by "postgres"
+I, [2015-09-11T20:24:48.874866 #55678]  INFO -- postgresql-trusty:       [31mFailure/Error: it { should be_owned_by 'postgres' }[0m
+I, [2015-09-11T20:24:48.874881 #55678]  INFO -- postgresql-trusty:       [31m  expected `File "/var/lib/postgresql/9.4/main".owned_by?("postgres")` to return true, got false[0m
+I, [2015-09-11T20:24:48.874893 #55678]  INFO -- postgresql-trusty:       [31m  /bin/sh -c stat\ -c\ \%U\ /var/lib/postgresql/9.4/main\ \|\ grep\ --\ \\\^postgres\\\$[0m
+I, [2015-09-11T20:24:48.874922 #55678]  INFO -- postgresql-trusty:       [31m  [0m
+I, [2015-09-11T20:24:48.874935 #55678]  INFO -- postgresql-trusty:       [36m# /tmp/verifier/suites/serverspec/localhost/fs_spec.rb:83:in `block (2 levels) in <top (required)>'[0m
+I, [2015-09-11T20:24:48.874947 #55678]  INFO -- postgresql-trusty: 
+I, [2015-09-11T20:24:48.874958 #55678]  INFO -- postgresql-trusty:   34) File "/var/lib/postgresql/9.4/main" should be grouped into "postgres"
+I, [2015-09-11T20:24:48.874970 #55678]  INFO -- postgresql-trusty:       [31mFailure/Error: it { should be_grouped_into 'postgres' }[0m
+I, [2015-09-11T20:24:48.874982 #55678]  INFO -- postgresql-trusty:       [31m  expected `File "/var/lib/postgresql/9.4/main".grouped_into?("postgres")` to return true, got false[0m
+I, [2015-09-11T20:24:48.874997 #55678]  INFO -- postgresql-trusty:       [31m  /bin/sh -c stat\ -c\ \%G\ /var/lib/postgresql/9.4/main\ \|\ grep\ --\ \\\^postgres\\\$[0m
+I, [2015-09-11T20:24:48.875009 #55678]  INFO -- postgresql-trusty:       [31m  [0m
+I, [2015-09-11T20:24:48.875022 #55678]  INFO -- postgresql-trusty:       [36m# /tmp/verifier/suites/serverspec/localhost/fs_spec.rb:84:in `block (2 levels) in <top (required)>'[0m
+I, [2015-09-11T20:24:48.875034 #55678]  INFO -- postgresql-trusty: 
+I, [2015-09-11T20:24:48.875046 #55678]  INFO -- postgresql-trusty:   35) File "/var/lib/postgresql/9.4/main" should be readable
+I, [2015-09-11T20:24:48.875058 #55678]  INFO -- postgresql-trusty:       [31mFailure/Error: it { should be_readable.by('owner') }[0m
+I, [2015-09-11T20:24:48.875069 #55678]  INFO -- postgresql-trusty:       [31m  expected File "/var/lib/postgresql/9.4/main" to be readable[0m
+I, [2015-09-11T20:24:48.875081 #55678]  INFO -- postgresql-trusty:       [31m  /bin/sh -c stat\ -c\ \%a\ /var/lib/postgresql/9.4/main[0m
+I, [2015-09-11T20:24:48.875093 #55678]  INFO -- postgresql-trusty:       [31m  [0m
+I, [2015-09-11T20:24:48.875105 #55678]  INFO -- postgresql-trusty:       [36m# /tmp/verifier/suites/serverspec/localhost/fs_spec.rb:86:in `block (2 levels) in <top (required)>'[0m
+I, [2015-09-11T20:24:48.875124 #55678]  INFO -- postgresql-trusty: 
+I, [2015-09-11T20:24:48.875138 #55678]  INFO -- postgresql-trusty:   36) File "/var/lib/postgresql/9.4/main" should be readable
+I, [2015-09-11T20:24:48.875180 #55678]  INFO -- postgresql-trusty:       [31mFailure/Error: it { should be_readable.by('group') }[0m
+I, [2015-09-11T20:24:48.875193 #55678]  INFO -- postgresql-trusty:       [31m  expected File "/var/lib/postgresql/9.4/main" to be readable[0m
+I, [2015-09-11T20:24:48.875205 #55678]  INFO -- postgresql-trusty:       [31m  /bin/sh -c stat\ -c\ \%a\ /var/lib/postgresql/9.4/main[0m
+I, [2015-09-11T20:24:48.875217 #55678]  INFO -- postgresql-trusty:       [31m  [0m
+I, [2015-09-11T20:24:48.875228 #55678]  INFO -- postgresql-trusty:       [36m# /tmp/verifier/suites/serverspec/localhost/fs_spec.rb:87:in `block (2 levels) in <top (required)>'[0m
+I, [2015-09-11T20:24:48.875239 #55678]  INFO -- postgresql-trusty: 
+I, [2015-09-11T20:24:48.875250 #55678]  INFO -- postgresql-trusty:   37) File "/var/lib/postgresql/9.4/main" should be writable
+I, [2015-09-11T20:24:48.875264 #55678]  INFO -- postgresql-trusty:       [31mFailure/Error: it { should be_writable.by('owner') }[0m
+I, [2015-09-11T20:24:48.875276 #55678]  INFO -- postgresql-trusty:       [31m  expected File "/var/lib/postgresql/9.4/main" to be writable[0m
+I, [2015-09-11T20:24:48.875288 #55678]  INFO -- postgresql-trusty:       [31m  /bin/sh -c stat\ -c\ \%a\ /var/lib/postgresql/9.4/main[0m
+I, [2015-09-11T20:24:48.875300 #55678]  INFO -- postgresql-trusty:       [31m  [0m
+I, [2015-09-11T20:24:48.875311 #55678]  INFO -- postgresql-trusty:       [36m# /tmp/verifier/suites/serverspec/localhost/fs_spec.rb:89:in `block (2 levels) in <top (required)>'[0m
+I, [2015-09-11T20:24:48.875322 #55678]  INFO -- postgresql-trusty: 
+I, [2015-09-11T20:24:48.875333 #55678]  INFO -- postgresql-trusty:   38) File "/var/run/postgresql/.s.PGSQL.5432" should be a socket
+I, [2015-09-11T20:24:48.875351 #55678]  INFO -- postgresql-trusty:       [31mFailure/Error: it { should be_a_socket }[0m
+I, [2015-09-11T20:24:48.875365 #55678]  INFO -- postgresql-trusty:       [31m  expected `File "/var/run/postgresql/.s.PGSQL.5432".socket?` to return true, got false[0m
+I, [2015-09-11T20:24:48.875381 #55678]  INFO -- postgresql-trusty:       [31m  /bin/sh -c test\ -S\ /var/run/postgresql/.s.PGSQL.5432[0m
+I, [2015-09-11T20:24:48.875393 #55678]  INFO -- postgresql-trusty:       [31m  [0m
+I, [2015-09-11T20:24:48.875404 #55678]  INFO -- postgresql-trusty:       [36m# /tmp/verifier/suites/serverspec/localhost/fs_spec.rb:97:in `block (2 levels) in <top (required)>'[0m
+I, [2015-09-11T20:24:48.875415 #55678]  INFO -- postgresql-trusty: 
+I, [2015-09-11T20:24:48.877101 #55678]  INFO -- postgresql-trusty: .5432" should be owned by "postgres"
+I, [2015-09-11T20:24:48.877184 #55678]  INFO -- postgresql-trusty:       [31mFailure/Error: it { should be_owned_by 'postgres' }[0m
+I, [2015-09-11T20:24:48.877222 #55678]  INFO -- postgresql-trusty:       [31m  expected `File "/var/run/postgresql/.s.PGSQL.5432".owned_by?("postgres")` to return true, got false[0m
+I, [2015-09-11T20:24:48.877273 #55678]  INFO -- postgresql-trusty:       [31m  /bin/sh -c stat\ -c\ \%U\ /var/run/postgresql/.s.PGSQL.5432\ \|\ grep\ --\ \\\^postgres\\\$[0m
+I, [2015-09-11T20:24:48.877303 #55678]  INFO -- postgresql-trusty:       [31m  [0m
+I, [2015-09-11T20:24:48.877332 #55678]  INFO -- postgresql-trusty:       [36m# /tmp/verifier/suites/serverspec/localhost/fs_spec.rb:98:in `block (2 levels) in <top (required)>'[0m
+I, [2015-09-11T20:24:48.877359 #55678]  INFO -- postgresql-trusty: 
+I, [2015-09-11T20:24:48.877399 #55678]  INFO -- postgresql-trusty:   40) File "/var/run/postgresql/.s.PGSQL.5432" should be grouped into "postgres"
+I, [2015-09-11T20:24:48.877430 #55678]  INFO -- postgresql-trusty:       [31mFailure/Error: it { should be_grouped_into 'postgres' }[0m
+I, [2015-09-11T20:24:48.877462 #55678]  INFO -- postgresql-trusty:       [31m  expected `File "/var/run/postgresql/.s.PGSQL.5432".grouped_into?("postgres")` to return true, got false[0m
+I, [2015-09-11T20:24:48.877487 #55678]  INFO -- postgresql-trusty:       [31m  /bin/sh -c stat\ -c\ \%G\ /var/run/postgresql/.s.PGSQL.5432\ \|\ grep\ --\ \\\^postgres\\\$[0m
+I, [2015-09-11T20:24:48.877508 #55678]  INFO -- postgresql-trusty:       [31m  [0m
+I, [2015-09-11T20:24:48.877529 #55678]  INFO -- postgresql-trusty:       [36m# /tmp/verifier/suites/serverspec/localhost/fs_spec.rb:99:in `block (2 levels) in <top (required)>'[0m
+I, [2015-09-11T20:24:48.877553 #55678]  INFO -- postgresql-trusty: 
+I, [2015-09-11T20:24:48.877584 #55678]  INFO -- postgresql-trusty:   41) File "/var/run/postgresql/.s.PGSQL.5432" should be mode 777
+I, [2015-09-11T20:24:48.877612 #55678]  INFO -- postgresql-trusty:       [31mFailure/Error: it { should be_mode 777 }[0m
+I, [2015-09-11T20:24:48.877668 #55678]  INFO -- postgresql-trusty:       [31m  expected `File "/var/run/postgresql/.s.PGSQL.5432".mode?(777)` to return true, got false[0m
+I, [2015-09-11T20:24:48.877711 #55678]  INFO -- postgresql-trusty:       [31m  /bin/sh -c stat\ -c\ \%a\ /var/run/postgresql/.s.PGSQL.5432\ \|\ grep\ --\ \\\^777\\\$[0m
+I, [2015-09-11T20:24:48.877745 #55678]  INFO -- postgresql-trusty:       [31m  [0m
+I, [2015-09-11T20:24:48.877771 #55678]  INFO -- postgresql-trusty:       [36m# /tmp/verifier/suites/serverspec/localhost/fs_spec.rb:101:in `block (2 levels) in <top (required)>'[0m
+I, [2015-09-11T20:24:48.877792 #55678]  INFO -- postgresql-trusty: 
+I, [2015-09-11T20:24:48.877812 #55678]  INFO -- postgresql-trusty:   42) File "/var/run/postgresql/9.4-main.pid" should be a file
+I, [2015-09-11T20:24:48.877932 #55678]  INFO -- postgresql-trusty:       [31mFailure/Error: it { should be_a_file }[0m
+I, [2015-09-11T20:24:48.877960 #55678]  INFO -- postgresql-trusty:       [31m  expected `File "/var/run/postgresql/9.4-main.pid".file?` to return true, got false[0m
+I, [2015-09-11T20:24:48.877983 #55678]  INFO -- postgresql-trusty:       [31m  /bin/sh -c test\ -f\ /var/run/postgresql/9.4-main.pid[0m
+I, [2015-09-11T20:24:48.878029 #55678]  INFO -- postgresql-trusty:       [31m  [0m
+I, [2015-09-11T20:24:48.878051 #55678]  INFO -- postgresql-trusty:       [36m# /tmp/verifier/suites/serverspec/localhost/fs_spec.rb:105:in `block (2 levels) in <top (required)>'[0m
+I, [2015-09-11T20:24:48.878088 #55678]  INFO -- postgresql-trusty: 
+I, [2015-09-11T20:24:48.878115 #55678]  INFO -- postgresql-trusty:   43) File "/var/run/postgresql/9.4-main.pid" should be owned by "postgres"
+I, [2015-09-11T20:24:48.878142 #55678]  INFO -- postgresql-trusty:       [31mFailure/Error: it { should be_owned_by 'postgres' }[0m
+I, [2015-09-11T20:24:48.878171 #55678]  INFO -- postgresql-trusty:       [31m  expected `File "/var/run/postgresql/9.4-main.pid".owned_by?("postgres")` to return true, got false[0m
+I, [2015-09-11T20:24:48.878195 #55678]  INFO -- postgresql-trusty:       [31m  /bin/sh -c stat\ -c\ \%U\ /var/run/postgresql/9.4-main.pid\ \|\ grep\ --\ \\\^postgres\\\$[0m
+I, [2015-09-11T20:24:48.878218 #55678]  INFO -- postgresql-trusty:       [31m  [0m
+I, [2015-09-11T20:24:48.878248 #55678]  INFO -- postgresql-trusty:       [36m# /tmp/verifier/suites/serverspec/localhost/fs_spec.rb:106:in `block (2 levels) in <top (required)>'[0m
+I, [2015-09-11T20:24:48.878271 #55678]  INFO -- postgresql-trusty: 
+I, [2015-09-11T20:24:48.878297 #55678]  INFO -- postgresql-trusty:   44) File "/var/run/postgresql/9.4-main.pid" should be grouped into "postgres"
+I, [2015-09-11T20:24:48.878329 #55678]  INFO -- postgresql-trusty:       [31mFailure/Error: it { should be_grouped_into 'postgres' }[0m
+I, [2015-09-11T20:24:48.878355 #55678]  INFO -- postgresql-trusty:       [31m  expected `File "/var/run/postgresql/9.4-main.pid".grouped_into?("postgres")` to return true, got false[0m
+I, [2015-09-11T20:24:48.878380 #55678]  INFO -- postgresql-trusty:       [31m  /bin/sh -c stat\ -c\ \%G\ /var/run/postgresql/9.4-main.pid\ \|\ grep\ --\ \\\^postgres\\\$[0m
+I, [2015-09-11T20:24:48.878401 #55678]  INFO -- postgresql-trusty:       [31m  [0m
+I, [2015-09-11T20:24:48.878424 #55678]  INFO -- postgresql-trusty:       [36m# /tmp/verifier/suites/serverspec/localhost/fs_spec.rb:107:in `block (2 levels) in <top (required)>'[0m
+I, [2015-09-11T20:24:48.878444 #55678]  INFO -- postgresql-trusty: 
+I, [2015-09-11T20:24:48.878464 #55678]  INFO -- postgresql-trusty:   45) File "/var/run/postgresql/9.4-main.pid" 
+I, [2015-09-11T20:24:48.878487 #55678]  INFO -- postgresql-trusty:       [31mFailure/Error: it { should b_mode 644 }[0m
+I, [2015-09-11T20:24:48.878512 #55678]  INFO -- postgresql-trusty:       [31mNoMethodError:[0m
+I, [2015-09-11T20:24:48.878533 #55678]  INFO -- postgresql-trusty:       [31m  undefined method `b_mode' for #<RSpec::ExampleGroups::FileVarRunPostgresql94MainPid:0x007fc455513530>[0m
+I, [2015-09-11T20:24:48.878561 #55678]  INFO -- postgresql-trusty:       [31m  [0m
+I, [2015-09-11T20:24:48.878586 #55678]  INFO -- postgresql-trusty:       [36m# /tmp/verifier/suites/serverspec/localhost/fs_spec.rb:109:in `block (2 levels) in <top (required)>'[0m
+I, [2015-09-11T20:24:48.878609 #55678]  INFO -- postgresql-trusty: 
+I, [2015-09-11T20:24:48.878633 #55678]  INFO -- postgresql-trusty:   46) User "postgres" should exist
+I, [2015-09-11T20:24:48.878655 #55678]  INFO -- postgresql-trusty:       [31mFailure/Error: it { should exist }[0m
+I, [2015-09-11T20:24:48.878675 #55678]  INFO -- postgresql-trusty:       [31m  expected User "postgres" to exist[0m
+I, [2015-09-11T20:24:48.878698 #55678]  INFO -- postgresql-trusty:       [31m  /bin/sh -c id\ postgres[0m
+I, [2015-09-11T20:24:48.878718 #55678]  INFO -- postgresql-trusty:       [31m  [0m
+I, [2015-09-11T20:24:48.878739 #55678]  INFO -- postgresql-trusty:       [36m# /tmp/verifier/suites/serverspec/localhost/fs_spec.rb:114:in `block (2 levels) in <top (required)>'[0m
+I, [2015-09-11T20:24:48.878761 #55678]  INFO -- postgresql-trusty: 
+I, [2015-09-11T20:24:48.878784 #55678]  INFO -- postgresql-trusty:   47) User "postgres" should belong to group "postgres"
+I, [2015-09-11T20:24:48.878832 #55678]  INFO -- postgresql-trusty:       [31mFailure/Error: it { should belong_to_group 'postgres' }[0m
+I, [2015-09-11T20:24:48.878938 #55678]  INFO -- postgresql-trusty:       [31m  expected User "postgres" to belong to group "postgres"[0m
+I, [2015-09-11T20:24:48.878968 #55678]  INFO -- postgresql-trusty:       [31m  /bin/sh -c id\ postgres\ \|\ awk\ \'\{print\ \$3\}\'\ \|\ grep\ --\ postgres[0m
+I, [2015-09-11T20:24:48.878994 #55678]  INFO -- postgresql-trusty:       [31m  [0m
+I, [2015-09-11T20:24:48.879016 #55678]  INFO -- postgresql-trusty:       [36m# /tmp/verifier/suites/serverspec/localhost/fs_spec.rb:115:in `block (2 levels) in <top (required)>'[0m
+I, [2015-09-11T20:24:48.879041 #55678]  INFO -- postgresql-trusty: 
+I, [2015-09-11T20:24:48.880286 #55678]  INFO -- postgresql-trusty: " 
+I, [2015-09-11T20:24:48.880325 #55678]  INFO -- postgresql-trusty:       [31mFailure/Error: it { should have_authorized_key POSTGRESQL_AUTHORIZED_KEY }[0m
+I, [2015-09-11T20:24:48.880348 #55678]  INFO -- postgresql-trusty:       [31mNameError:[0m
+I, [2015-09-11T20:24:48.880367 #55678]  INFO -- postgresql-trusty:       [31m  uninitialized constant POSTGRESQL_AUTHORIZED_KEY[0m
+I, [2015-09-11T20:24:48.880386 #55678]  INFO -- postgresql-trusty:       [31m  [0m
+I, [2015-09-11T20:24:48.880442 #55678]  INFO -- postgresql-trusty:       [36m# /tmp/verifier/suites/serverspec/localhost/fs_spec.rb:116:in `block (2 levels) in <top (required)>'[0m
+I, [2015-09-11T20:24:48.880461 #55678]  INFO -- postgresql-trusty: 
+I, [2015-09-11T20:24:48.880478 #55678]  INFO -- postgresql-trusty:   49) Group "postgres" should exist
+I, [2015-09-11T20:24:48.880496 #55678]  INFO -- postgresql-trusty:       [31mFailure/Error: it { should exist }[0m
+I, [2015-09-11T20:24:48.880514 #55678]  INFO -- postgresql-trusty:       [31m  expected Group "postgres" to exist[0m
+I, [2015-09-11T20:24:48.880531 #55678]  INFO -- postgresql-trusty:       [31m  /bin/sh -c getent\ group\ postgres[0m
+I, [2015-09-11T20:24:48.880548 #55678]  INFO -- postgresql-trusty:       [31m  [0m
+I, [2015-09-11T20:24:48.880566 #55678]  INFO -- postgresql-trusty:       [36m# /tmp/verifier/suites/serverspec/localhost/fs_spec.rb:120:in `block (2 levels) in <top (required)>'[0m
+I, [2015-09-11T20:24:48.880601 #55678]  INFO -- postgresql-trusty: 
+I, [2015-09-11T20:24:48.880641 #55678]  INFO -- postgresql-trusty:   50) Process "postgresql" should be running
+I, [2015-09-11T20:24:48.880669 #55678]  INFO -- postgresql-trusty:       [31mFailure/Error: it { should be_running }[0m
+I, [2015-09-11T20:24:48.880696 #55678]  INFO -- postgresql-trusty:       [31m  expected Process "postgresql" to be running[0m
+I, [2015-09-11T20:24:48.880718 #55678]  INFO -- postgresql-trusty:       [31m  /bin/sh -c ps\ -C\ postgresql\ -o\ pid\=\ \|\ head\ -1[0m
+I, [2015-09-11T20:24:48.880742 #55678]  INFO -- postgresql-trusty:       [31m  [0m
+I, [2015-09-11T20:24:48.880767 #55678]  INFO -- postgresql-trusty:       [36m# /tmp/verifier/suites/serverspec/localhost/fs_spec.rb:125:in `block (2 levels) in <top (required)>'[0m
+I, [2015-09-11T20:24:48.880793 #55678]  INFO -- postgresql-trusty: 
+I, [2015-09-11T20:24:48.880818 #55678]  INFO -- postgresql-trusty:   51) Process "postgresql" user should eq "postgres"
+I, [2015-09-11T20:24:48.880845 #55678]  INFO -- postgresql-trusty:       [31mFailure/Error: its(:user) { should eq "postgres" }[0m
+I, [2015-09-11T20:24:48.880870 #55678]  INFO -- postgresql-trusty:       [31m  [0m
+I, [2015-09-11T20:24:48.880896 #55678]  INFO -- postgresql-trusty:       [31m  expected: "postgres"[0m
+I, [2015-09-11T20:24:48.880921 #55678]  INFO -- postgresql-trusty:       [31m       got: ""[0m
+I, [2015-09-11T20:24:48.880945 #55678]  INFO -- postgresql-trusty:       [31m  [0m
+I, [2015-09-11T20:24:48.880970 #55678]  INFO -- postgresql-trusty:       [31m  (compared using ==)[0m
+I, [2015-09-11T20:24:48.880995 #55678]  INFO -- postgresql-trusty:       [31m  /bin/sh -c ps\ -C\ postgresql\ -o\ user\=\ \|\ head\ -1[0m
+I, [2015-09-11T20:24:48.881043 #55678]  INFO -- postgresql-trusty:       [31m  [0m
+I, [2015-09-11T20:24:48.881065 #55678]  INFO -- postgresql-trusty:       [36m# /tmp/verifier/suites/serverspec/localhost/fs_spec.rb:126:in `block (2 levels) in <top (required)>'[0m
+I, [2015-09-11T20:24:48.881095 #55678]  INFO -- postgresql-trusty: 
+I, [2015-09-11T20:24:48.881120 #55678]  INFO -- postgresql-trusty:   52) Process "postgresql" args should match /config_file=\/etc\/postgresql\/9.4\/main\/postgresql.conf/
+I, [2015-09-11T20:24:48.881143 #55678]  INFO -- postgresql-trusty:       [31mFailure/Error: its(:args) { should match /config_file=\/etc\/postgresql\/9.4\/main\/postgresql.conf/ }[0m
+I, [2015-09-11T20:24:48.881168 #55678]  INFO -- postgresql-trusty:       [31m  expected "" to match /config_file=\/etc\/postgresql\/9.4\/main\/postgresql.conf/[0m
+I, [2015-09-11T20:24:48.881194 #55678]  INFO -- postgresql-trusty:       [31m  Diff:[0m[0m
+I, [2015-09-11T20:24:48.881219 #55678]  INFO -- postgresql-trusty:       [31m  [0m[34m@@ -1,2 +1,2 @@[0m
+I, [2015-09-11T20:24:48.881242 #55678]  INFO -- postgresql-trusty:       [31m  [0m[31m-/config_file=\/etc\/postgresql\/9.4\/main\/postgresql.conf/[0m
+I, [2015-09-11T20:24:48.881268 #55678]  INFO -- postgresql-trusty:       [31m  [0m[32m+""[0m
+I, [2015-09-11T20:24:48.881291 #55678]  INFO -- postgresql-trusty:       [31m  [0m[0m
+I, [2015-09-11T20:24:48.881314 #55678]  INFO -- postgresql-trusty:       [31m  /bin/sh -c ps\ -C\ postgresql\ -o\ args\=\ \|\ head\ -1[0m
+I, [2015-09-11T20:24:48.881338 #55678]  INFO -- postgresql-trusty:       [31m  [0m
+I, [2015-09-11T20:24:48.881451 #55678]  INFO -- postgresql-trusty:       [36m# /tmp/verifier/suites/serverspec/localhost/fs_spec.rb:127:in `block (2 levels) in <top (required)>'[0m
+I, [2015-09-11T20:24:48.881479 #55678]  INFO -- postgresql-trusty: 
+I, [2015-09-11T20:24:48.881505 #55678]  INFO -- postgresql-trusty:   53) Port "5432" should be listening
+I, [2015-09-11T20:24:48.881531 #55678]  INFO -- postgresql-trusty:       [31mFailure/Error: it { should be_listening.on('0.0.0.0').with('tcp') }[0m
+I, [2015-09-11T20:24:48.881556 #55678]  INFO -- postgresql-trusty:       [31m  expected Port "5432" to be listening[0m
+I, [2015-09-11T20:24:48.881583 #55678]  INFO -- postgresql-trusty:       [31m  /bin/sh -c netstat\ -tunl\ \|\ grep\ --\ \\\^tcp\\\ .\\\*\\\ 0.0.0.0:5432\\\ [0m
+I, [2015-09-11T20:24:48.881610 #55678]  INFO -- postgresql-trusty:       [31m  [0m
+I, [2015-09-11T20:24:48.881636 #55678]  INFO -- postgresql-trusty:       [36m# /tmp/verifier/suites/serverspec/localhost/fs_spec.rb:131:in `block (2 levels) in <top (required)>'[0m
+I, [2015-09-11T20:24:48.881653 #55678]  INFO -- postgresql-trusty: 
+I, [2015-09-11T20:24:48.881675 #55678]  INFO -- postgresql-trusty:   54) Service "postgresql" should be enabled
+I, [2015-09-11T20:24:48.881700 #55678]  INFO -- postgresql-trusty:       [31mFailure/Error: it { should be_enabled }[0m
+I, [2015-09-11T20:24:48.881725 #55678]  INFO -- postgresql-trusty:       [31m  expected Service "postgresql" to be enabled[0m
+I, [2015-09-11T20:24:48.881744 #55678]  INFO -- postgresql-trusty:       [31m  /bin/sh -c ls\ /etc/rc3.d/\ \|\ grep\ --\ \'\^S..postgresql\$\'\ \|\|\ grep\ \'\^\ \*start\ on\'\ /etc/init/postgresql.conf[0m
+I, [2015-09-11T20:24:48.881769 #55678]  INFO -- postgresql-trusty:       [31m  [0m
+I, [2015-09-11T20:24:48.881793 #55678]  INFO -- postgresql-trusty:       [36m# /tmp/verifier/suites/serverspec/localhost/fs_spec.rb:136:in `block (2 levels) in <top (required)>'[0m
+I, [2015-09-11T20:24:48.881820 #55678]  INFO -- postgresql-trusty: 
+I, [2015-09-11T20:24:48.881844 #55678]  INFO -- postgresql-trusty:   55) Service "postgresql" should be running
+I, [2015-09-11T20:24:48.881864 #55678]  INFO -- postgresql-trusty:       [31mFailure/Error: it { should be_running.under('upstart') }[0m
+I, [2015-09-11T20:24:48.881890 #55678]  INFO -- postgresql-trusty:       [31m  expected Service "postgresql" to be running[0m
+I, [2015-09-11T20:24:48.881916 #55678]  INFO -- postgresql-trusty:       [31m  /bin/sh -c initctl\ status\ postgresql\ \|\ grep\ running[0m
+I, [2015-09-11T20:24:48.881959 #55678]  INFO -- postgresql-trusty:       [31m  [0m
+I, [2015-09-11T20:24:48.881985 #55678]  INFO -- postgresql-trusty:       [36m# /tmp/verifier/suites/serverspec/localhost/fs_spec.rb:137:in `block (2 levels) in <top (required)>'[0m
+I, [2015-09-11T20:24:48.882017 #55678]  INFO -- postgresql-trusty: 
+I, [2015-09-11T20:24:48.883569 #55678]  INFO -- postgresql-trusty: Finished in 1.08 seconds (files took 0.60949 seconds to load)
+I, [2015-09-11T20:24:48.883620 #55678]  INFO -- postgresql-trusty: [31m67 examples, 55 failures[0m
+I, [2015-09-11T20:24:48.883646 #55678]  INFO -- postgresql-trusty: 
+I, [2015-09-11T20:24:48.883673 #55678]  INFO -- postgresql-trusty: Failed examples:
+I, [2015-09-11T20:24:48.883698 #55678]  INFO -- postgresql-trusty: 
+I, [2015-09-11T20:24:48.883724 #55678]  INFO -- postgresql-trusty: [31mrspec /tmp/verifier/suites/serverspec/localhost/fs_spec.rb:6[0m [36m# Package "postgresql-9.4" should be installed[0m
+I, [2015-09-11T20:24:48.883751 #55678]  INFO -- postgresql-trusty: [31mrspec /tmp/verifier/suites/serverspec/localhost/fs_spec.rb:11[0m [36m# File "/etc/postgresql" should be a directory[0m
+I, [2015-09-11T20:24:48.883774 #55678]  INFO -- postgresql-trusty: [31mrspec /tmp/verifier/suites/serverspec/localhost/fs_spec.rb:12[0m [36m# File "/etc/postgresql" should be owned by "postgres"[0m
+I, [2015-09-11T20:24:48.883799 #55678]  INFO -- postgresql-trusty: [31mrspec /tmp/verifier/suites/serverspec/localhost/fs_spec.rb:13[0m [36m# File "/etc/postgresql" should be grouped into "postgres"[0m
+I, [2015-09-11T20:24:48.883823 #55678]  INFO -- postgresql-trusty: [31mrspec /tmp/verifier/suites/serverspec/localhost/fs_spec.rb:15[0m [36m# File "/etc/postgresql" should be readable[0m
+I, [2015-09-11T20:24:48.883849 #55678]  INFO -- postgresql-trusty: [31mrspec /tmp/verifier/suites/serverspec/localhost/fs_spec.rb:16[0m [36m# File "/etc/postgresql" should be readable[0m
+I, [2015-09-11T20:24:48.883876 #55678]  INFO -- postgresql-trusty: [31mrspec /tmp/verifier/suites/serverspec/localhost/fs_spec.rb:18[0m [36m# File "/etc/postgresql" should be writable[0m
+I, [2015-09-11T20:24:48.883902 #55678]  INFO -- postgresql-trusty: [31mrspec /tmp/verifier/suites/serverspec/localhost/fs_spec.rb:25[0m [36m# File "/etc/postgresql/9.4/main" should be a directory[0m
+I, [2015-09-11T20:24:48.883928 #55678]  INFO -- postgresql-trusty: [31mrspec /tmp/verifier/suites/serverspec/localhost/fs_spec.rb:26[0m [36m# File "/etc/postgresql/9.4/main" should be owned by "postgres"[0m
+I, [2015-09-11T20:24:48.883954 #55678]  INFO -- postgresql-trusty: [31mrspec /tmp/verifier/suites/serverspec/localhost/fs_spec.rb:27[0m [36m# File "/etc/postgresql/9.4/main" should be grouped into "postgres"[0m
+I, [2015-09-11T20:24:48.883980 #55678]  INFO -- postgresql-trusty: [31mrspec /tmp/verifier/suites/serverspec/localhost/fs_spec.rb:29[0m [36m# File "/etc/postgresql/9.4/main" should be readable[0m
+I, [2015-09-11T20:24:48.884005 #55678]  INFO -- postgresql-trusty: [31mrspec /tmp/verifier/suites/serverspec/localhost/fs_spec.rb:30[0m [36m# File "/etc/postgresql/9.4/main" should be readable[0m
+I, [2015-09-11T20:24:48.884036 #55678]  INFO -- postgresql-trusty: [31mrspec /tmp/verifier/suites/serverspec/localhost/fs_spec.rb:32[0m [36m# File "/etc/postgresql/9.4/main" should be writable[0m
+I, [2015-09-11T20:24:48.884062 #55678]  INFO -- postgresql-trusty: [31mrspec /tmp/verifier/suites/serverspec/localhost/fs_spec.rb:39[0m [36m# File "/etc/postgresql/9.4/main/postgresql.conf" should be a file[0m
+I, [2015-09-11T20:24:48.884088 #55678]  INFO -- postgresql-trusty: [31mrspec /tmp/verifier/suites/serverspec/localhost/fs_spec.rb:40[0m [36m# File "/etc/postgresql/9.4/main/postgresql.conf" should be owned by "postgres"[0m
+I, [2015-09-11T20:24:48.884114 #55678]  INFO -- postgresql-trusty: [31mrspec /tmp/verifier/suites/serverspec/localhost/fs_spec.rb:41[0m [36m# File "/etc/postgresql/9.4/main/postgresql.conf" should be grouped into "postgres"[0m
+I, [2015-09-11T20:24:48.884161 #55678]  INFO -- postgresql-trusty: [31mrspec /tmp/verifier/suites/serverspec/localhost/fs_spec.rb:43[0m [36m# File "/etc/postgresql/9.4/main/postgresql.conf" should be readable[0m
+I, [2015-09-11T20:24:48.884254 #55678]  INFO -- postgresql-trusty: [31mrspec /tmp/verifier/suites/serverspec/localhost/fs_spec.rb:44[0m [36m# File "/etc/postgresql/9.4/main/postgresql.conf" should be readable[0m
+I, [2015-09-11T20:24:48.884286 #55678]  INFO -- postgresql-trusty: [31mrspec /tmp/verifier/suites/serverspec/localhost/fs_spec.rb:46[0m [36m# File "/etc/postgresql/9.4/main/postgresql.conf" should be writable[0m
+I, [2015-09-11T20:24:48.884309 #55678]  INFO -- postgresql-trusty: [31mrspec /tmp/verifier/suites/serverspec/localhost/fs_spec.rb:53[0m [36m# File "/etc/postgresql/9.4/main/pg_hba.conf" should be a file[0m
+I, [2015-09-11T20:24:48.884333 #55678]  INFO -- postgresql-trusty: [31mrspec /tmp/verifier/suites/serverspec/localhost/fs_spec.rb:54[0m [36m# File "/etc/postgresql/9.4/main/pg_hba.conf" should be owned by "postgres"[0m
+I, [2015-09-11T20:24:48.884359 #55678]  INFO -- postgresql-trusty: [31mrspec /tmp/verifier/suites/serverspec/localhost/fs_spec.rb:55[0m [36m# File "/etc/postgresql/9.4/main/pg_hba.conf" should be grouped into "postgres"[0m
+I, [2015-09-11T20:24:48.884383 #55678]  INFO -- postgresql-trusty: [31mrspec /tmp/verifier/suites/serverspec/localhost/fs_spec.rb:57[0m [36m# File "/etc/postgresql/9.4/main/pg_hba.conf" should be readable[0m
+I, [2015-09-11T20:24:48.884401 #55678]  INFO -- postgresql-trusty: [31mrspec /tmp/verifier/suites/serverspec/localhost/fs_spec.rb:58[0m [36m# File "/etc/postgresql/9.4/main/pg_hba.conf" should be readable[0m
+I, [2015-09-11T20:24:48.884425 #55678]  INFO -- postgresql-trusty: [31mrspec /tmp/verifier/suites/serverspec/localhost/fs_spec.rb:60[0m [36m# File "/etc/postgresql/9.4/main/pg_hba.conf" should be writable[0m
+I, [2015-09-11T20:24:48.884452 #55678]  INFO -- postgresql-trusty: [31mrspec /tmp/verifier/suites/serverspec/localhost/fs_spec.rb:68[0m [36m# File "/var/lib/postgresql" should be a directory[0m
+I, [2015-09-11T20:24:48.884476 #55678]  INFO -- postgresql-trusty: [31mrspec /tmp/verifier/suites/serverspec/localhost/fs_spec.rb:69[0m [36m# File "/var/lib/postgresql" should be owned by "postgres"[0m
+I, [2015-09-11T20:24:48.885417 #55678]  INFO -- postgresql-trusty: 0m
+I, [2015-09-11T20:24:48.885459 #55678]  INFO -- postgresql-trusty: [31mrspec /tmp/verifier/suites/serverspec/localhost/fs_spec.rb:72[0m [36m# File "/var/lib/postgresql" should be readable[0m
+I, [2015-09-11T20:24:48.885485 #55678]  INFO -- postgresql-trusty: [31mrspec /tmp/verifier/suites/serverspec/localhost/fs_spec.rb:73[0m [36m# File "/var/lib/postgresql" should be readable[0m
+I, [2015-09-11T20:24:48.885501 #55678]  INFO -- postgresql-trusty: [31mrspec /tmp/verifier/suites/serverspec/localhost/fs_spec.rb:75[0m [36m# File "/var/lib/postgresql" should be writable[0m
+I, [2015-09-11T20:24:48.885523 #55678]  INFO -- postgresql-trusty: [31mrspec /tmp/verifier/suites/serverspec/localhost/fs_spec.rb:82[0m [36m# File "/var/lib/postgresql/9.4/main" should be a directory[0m
+I, [2015-09-11T20:24:48.885534 #55678]  INFO -- postgresql-trusty: [31mrspec /tmp/verifier/suites/serverspec/localhost/fs_spec.rb:83[0m [36m# File "/var/lib/postgresql/9.4/main" should be owned by "postgres"[0m
+I, [2015-09-11T20:24:48.885546 #55678]  INFO -- postgresql-trusty: [31mrspec /tmp/verifier/suites/serverspec/localhost/fs_spec.rb:84[0m [36m# File "/var/lib/postgresql/9.4/main" should be grouped into "postgres"[0m
+I, [2015-09-11T20:24:48.885557 #55678]  INFO -- postgresql-trusty: [31mrspec /tmp/verifier/suites/serverspec/localhost/fs_spec.rb:86[0m [36m# File "/var/lib/postgresql/9.4/main" should be readable[0m
+I, [2015-09-11T20:24:48.885570 #55678]  INFO -- postgresql-trusty: [31mrspec /tmp/verifier/suites/serverspec/localhost/fs_spec.rb:87[0m [36m# File "/var/lib/postgresql/9.4/main" should be readable[0m
+I, [2015-09-11T20:24:48.885595 #55678]  INFO -- postgresql-trusty: [31mrspec /tmp/verifier/suites/serverspec/localhost/fs_spec.rb:89[0m [36m# File "/var/lib/postgresql/9.4/main" should be writable[0m
+I, [2015-09-11T20:24:48.885608 #55678]  INFO -- postgresql-trusty: [31mrspec /tmp/verifier/suites/serverspec/localhost/fs_spec.rb:97[0m [36m# File "/var/run/postgresql/.s.PGSQL.5432" should be a socket[0m
+I, [2015-09-11T20:24:48.885620 #55678]  INFO -- postgresql-trusty: [31mrspec /tmp/verifier/suites/serverspec/localhost/fs_spec.rb:98[0m [36m# File "/var/run/postgresql/.s.PGSQL.5432" should be owned by "postgres"[0m
+I, [2015-09-11T20:24:48.885631 #55678]  INFO -- postgresql-trusty: [31mrspec /tmp/verifier/suites/serverspec/localhost/fs_spec.rb:99[0m [36m# File "/var/run/postgresql/.s.PGSQL.5432" should be grouped into "postgres"[0m
+I, [2015-09-11T20:24:48.885642 #55678]  INFO -- postgresql-trusty: [31mrspec /tmp/verifier/suites/serverspec/localhost/fs_spec.rb:101[0m [36m# File "/var/run/postgresql/.s.PGSQL.5432" should be mode 777[0m
+I, [2015-09-11T20:24:48.885652 #55678]  INFO -- postgresql-trusty: [31mrspec /tmp/verifier/suites/serverspec/localhost/fs_spec.rb:105[0m [36m# File "/var/run/postgresql/9.4-main.pid" should be a file[0m
+I, [2015-09-11T20:24:48.885666 #55678]  INFO -- postgresql-trusty: [31mrspec /tmp/verifier/suites/serverspec/localhost/fs_spec.rb:106[0m [36m# File "/var/run/postgresql/9.4-main.pid" should be owned by "postgres"[0m
+I, [2015-09-11T20:24:48.885677 #55678]  INFO -- postgresql-trusty: [31mrspec /tmp/verifier/suites/serverspec/localhost/fs_spec.rb:107[0m [36m# File "/var/run/postgresql/9.4-main.pid" should be grouped into "postgres"[0m
+I, [2015-09-11T20:24:48.885688 #55678]  INFO -- postgresql-trusty: [31mrspec /tmp/verifier/suites/serverspec/localhost/fs_spec.rb:109[0m [36m# File "/var/run/postgresql/9.4-main.pid" [0m
+I, [2015-09-11T20:24:48.885698 #55678]  INFO -- postgresql-trusty: [31mrspec /tmp/verifier/suites/serverspec/localhost/fs_spec.rb:114[0m [36m# User "postgres" should exist[0m
+I, [2015-09-11T20:24:48.885709 #55678]  INFO -- postgresql-trusty: [31mrspec /tmp/verifier/suites/serverspec/localhost/fs_spec.rb:115[0m [36m# User "postgres" should belong to group "postgres"[0m
+I, [2015-09-11T20:24:48.885719 #55678]  INFO -- postgresql-trusty: [31mrspec /tmp/verifier/suites/serverspec/localhost/fs_spec.rb:116[0m [36m# User "postgres" [0m
+I, [2015-09-11T20:24:48.885730 #55678]  INFO -- postgresql-trusty: [31mrspec /tmp/verifier/suites/serverspec/localhost/fs_spec.rb:120[0m [36m# Group "postgres" should exist[0m
+I, [2015-09-11T20:24:48.885742 #55678]  INFO -- postgresql-trusty: [31mrspec /tmp/verifier/suites/serverspec/localhost/fs_spec.rb:125[0m [36m# Process "postgresql" should be running[0m
+I, [2015-09-11T20:24:48.885753 #55678]  INFO -- postgresql-trusty: [31mrspec /tmp/verifier/suites/serverspec/localhost/fs_spec.rb:126[0m [36m# Process "postgresql" user should eq "postgres"[0m
+I, [2015-09-11T20:24:48.885764 #55678]  INFO -- postgresql-trusty: [31mrspec /tmp/verifier/suites/serverspec/localhost/fs_spec.rb:127[0m [36m# Process "postgresql" args should match /config_file=\/etc\/postgresql\/9.4\/main\/postgresql.conf/[0m
+I, [2015-09-11T20:24:48.885775 #55678]  INFO -- postgresql-trusty: [31mrspec /tmp/verifier/suites/serverspec/localhost/fs_spec.rb:131[0m [36m# Port "5432" should be listening[0m
+I, [2015-09-11T20:24:48.885785 #55678]  INFO -- postgresql-trusty: [31mrspec /tmp/verifier/suites/serverspec/localhost/fs_spec.rb:136[0m [36m# Service "postgresql" should be enabled[0m
+I, [2015-09-11T20:24:48.885796 #55678]  INFO -- postgresql-trusty: [31mrspec /tmp/verifier/suites/serverspec/localhost/fs_spec.rb:137[0m [36m# Service "postgresql" should be running[0m
+I, [2015-09-11T20:24:48.885806 #55678]  INFO -- postgresql-trusty: 
+I, [2015-09-11T20:24:48.947134 #55678]  INFO -- postgresql-trusty: /usr/bin/ruby -I/tmp/verifier/suites/serverspec -I/tmp/verifier/gems/gems/rspec-support-3.3.0/lib:/tmp/verifier/gems/gems/rspec-core-3.3.2/lib /tmp/verifier/gems/bin/rspec --pattern /tmp/verifier/suites/serverspec/\*\*/\*_spec.rb --color --format documentation --default-path /tmp/verifier/suites/serverspec failed
+I, [2015-09-11T20:24:48.951661 #55678]  INFO -- postgresql-trusty: !!!!!! Ruby Script [/tmp/verifier/gems/gems/busser-serverspec-0.5.7/lib/busser/runner_plugin/../serverspec/runner.rb /tmp/verifier/suites/serverspec] exit code was 1
+E, [2015-09-11T20:24:48.965405 #55678] ERROR -- postgresql-trusty: Verify failed on instance <postgresql-trusty>.
+E, [2015-09-11T20:24:48.965513 #55678] ERROR -- postgresql-trusty: ------Exception-------
+E, [2015-09-11T20:24:48.965533 #55678] ERROR -- postgresql-trusty: Class: Kitchen::ActionFailed
+E, [2015-09-11T20:24:48.965545 #55678] ERROR -- postgresql-trusty: Message: SSH exited (1) for command: [sh -c '
+
+BUSSER_ROOT="/tmp/verifier"; export BUSSER_ROOT
+GEM_HOME="/tmp/verifier/gems"; export GEM_HOME
+GEM_PATH="/tmp/verifier/gems"; export GEM_PATH
+GEM_CACHE="/tmp/verifier/gems/cache"; export GEM_CACHE
+
+sudo -E /tmp/verifier/bin/busser test
+']
+E, [2015-09-11T20:24:48.965556 #55678] ERROR -- postgresql-trusty: ---Nested Exception---
+E, [2015-09-11T20:24:48.965566 #55678] ERROR -- postgresql-trusty: Class: Kitchen::Transport::SshFailed
+E, [2015-09-11T20:24:48.965575 #55678] ERROR -- postgresql-trusty: Message: SSH exited (1) for command: [sh -c '
+
+BUSSER_ROOT="/tmp/verifier"; export BUSSER_ROOT
+GEM_HOME="/tmp/verifier/gems"; export GEM_HOME
+GEM_PATH="/tmp/verifier/gems"; export GEM_PATH
+GEM_CACHE="/tmp/verifier/gems/cache"; export GEM_CACHE
+
+sudo -E /tmp/verifier/bin/busser test
+']
+E, [2015-09-11T20:24:48.965586 #55678] ERROR -- postgresql-trusty: ------Backtrace-------
+E, [2015-09-11T20:24:48.965595 #55678] ERROR -- postgresql-trusty: /usr/local/var/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/test-kitchen-1.4.2/lib/kitchen/verifier/base.rb:79:in `rescue in call'
+E, [2015-09-11T20:24:48.965605 #55678] ERROR -- postgresql-trusty: /usr/local/var/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/test-kitchen-1.4.2/lib/kitchen/verifier/base.rb:82:in `call'
+E, [2015-09-11T20:24:48.965615 #55678] ERROR -- postgresql-trusty: /usr/local/var/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/test-kitchen-1.4.2/lib/kitchen/instance.rb:398:in `block in verify_action'
+E, [2015-09-11T20:24:48.965626 #55678] ERROR -- postgresql-trusty: /usr/local/var/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/test-kitchen-1.4.2/lib/kitchen/instance.rb:488:in `call'
+E, [2015-09-11T20:24:48.965635 #55678] ERROR -- postgresql-trusty: /usr/local/var/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/test-kitchen-1.4.2/lib/kitchen/instance.rb:488:in `synchronize_or_call'
+E, [2015-09-11T20:24:48.965645 #55678] ERROR -- postgresql-trusty: /usr/local/var/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/test-kitchen-1.4.2/lib/kitchen/instance.rb:453:in `block in action'
+E, [2015-09-11T20:24:48.965655 #55678] ERROR -- postgresql-trusty: /usr/local/var/rbenv/versions/2.2.2/lib/ruby/2.2.0/benchmark.rb:288:in `measure'
+E, [2015-09-11T20:24:48.965664 #55678] ERROR -- postgresql-trusty: /usr/local/var/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/test-kitchen-1.4.2/lib/kitchen/instance.rb:452:in `action'
+E, [2015-09-11T20:24:48.965674 #55678] ERROR -- postgresql-trusty: /usr/local/var/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/test-kitchen-1.4.2/lib/kitchen/instance.rb:394:in `verify_action'
+E, [2015-09-11T20:24:48.965683 #55678] ERROR -- postgresql-trusty: /usr/local/var/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/test-kitchen-1.4.2/lib/kitchen/instance.rb:341:in `block in transition_to'
+E, [2015-09-11T20:24:48.965693 #55678] ERROR -- postgresql-trusty: /usr/local/var/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/test-kitchen-1.4.2/lib/kitchen/instance.rb:340:in `each'
+E, [2015-09-11T20:24:48.965703 #55678] ERROR -- postgresql-trusty: /usr/local/var/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/test-kitchen-1.4.2/lib/kitchen/instance.rb:340:in `transition_to'
+E, [2015-09-11T20:24:48.965712 #55678] ERROR -- postgresql-trusty: /usr/local/var/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/test-kitchen-1.4.2/lib/kitchen/instance.rb:160:in `verify'
+E, [2015-09-11T20:24:48.965732 #55678] ERROR -- postgresql-trusty: /usr/local/var/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/test-kitchen-1.4.2/lib/kitchen/command.rb:176:in `public_send'
+E, [2015-09-11T20:24:48.965743 #55678] ERROR -- postgresql-trusty: /usr/local/var/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/test-kitchen-1.4.2/lib/kitchen/command.rb:176:in `block (2 levels) in run_action'
+E, [2015-09-11T20:24:48.965753 #55678] ERROR -- postgresql-trusty: ----------------------

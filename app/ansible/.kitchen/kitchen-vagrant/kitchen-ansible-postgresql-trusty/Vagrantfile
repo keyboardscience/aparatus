@@ -1,0 +1,12 @@
+require "/Users/kevinphillips/zen/tools/aparatus/app/ansible/.vagrant.rb"
+Vagrant.configure("2") do |c|
+  c.berkshelf.enabled = false if Vagrant.has_plugin?("vagrant-berkshelf")
+  c.vm.box = "puppetlabs/ubuntu-14.04-64-nocm"
+  c.vm.hostname = "postgresql-trusty"
+  c.vm.network(:private_network, {:ip=>"192.168.31.198"})
+  c.vm.synced_folder ".", "/vagrant", disabled: true
+  c.vm.provider :virtualbox do |p|
+    p.customize ["modifyvm", :id, "--memory", "1024"]
+    p.customize ["modifyvm", :id, "--cpuexecutioncap", "50"]
+  end
+end

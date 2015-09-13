@@ -1,0 +1,3 @@
+I, [2015-09-11T20:23:09.501063 #55678]  INFO -- Kitchen: -----> Starting Kitchen (v1.4.2)
+I, [2015-09-11T20:23:09.977527 #55678]  INFO -- Kitchen: -----> Verifying <postgresql-trusty>...
+E, [2015-09-11T20:24:48.967008 #55678] ERROR -- Kitchen: Verify failed on instance <postgresql-trusty>.

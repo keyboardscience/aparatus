@@ -5,8 +5,10 @@ psql_version: 9.4
 psql_cluster_name: "main"
 psql_owner: "postgres"
 
-# dictionary that represents configuration
-# XXX subsections keys must be valid psql configuration keys.
+psql_custom_conf: {}
+
+# dictionary that represents default configuration
+## this is the bare minimum functionality to test
 psql_default_conf:
   files:
     data_directory: "/var/lib/postgresql/{{ psql_version }}/{{ psql_cluster_name }}"
@@ -17,7 +19,7 @@ psql_default_conf:
     listen_addresses: ["*"]
     port: 5432
     max_connections: 1000 # n.b. 1 connection == 400 bytes shared memory plus lock space
-    superuser_reserved_connections: 10
+    superuser_reserved_connections: 10 # postgres user gets some failback connections
     unix_socket_directories: ["/var/run/postgresql"]
     unix_socket_group: ""
     unix_socket_permissions: "0777"
@@ -36,7 +38,7 @@ psql_default_conf:
     shared_buffers: "64M"
     temp_buffers: "16M"
     work_mem: "2M"
-    temp_file_limit :"-1"                  # limits per-session temp file space
+    temp_file_limit: "-1"                  # limits per-session temp file space
     max_files_per_process: "2000"          # min 25
     shared_preload_libraries: ''           # (change requires restart)
     vacuum_cost_delay: 0                   # 0-100 milliseconds
@@ -48,14 +50,40 @@ psql_default_conf:
     bgwriter_lru_maxpages: 100             # 0-1000 max buffers written/round
     bgwriter_lru_multiplier: "2.0"         # 0-10.0 multipler on buffers scanned/round
     effective_io_concurrency: 1            # 1-1000; 0 disables prefetching
-  wal:
+  wal: # at a **minimum** we should do local archiving of wal (so we can restore state completely)
+    wal_level: "archive"
+    fsync: "on"
+    syhcronous_commit: "on"
+    wal_sync_method: "fdatasync"
+    full_page_write: "on"
+    wal_buffers: "-1"
+    wal_write_deploy: "100ms"
+    commit_deploy: 0
+    commit_siblings: 10
+    checkpoint_segments: 3
+    checkpoint_timeout: "5m"
+    checkpoint_completion_target: "0.67"
+    archive_mode: "on"
+    archive_command: "test ! -f /var/lib/postgresql/archives/{{ psql_version }}/{{ psql_cluster_name }}/%f && cp %p /var/lib/postgresql/archives/{{ psql_version }}/{{ psql_cluster_name }}/%f"
+    archive_timeout: 0
   repl:
-  query_tuning:
-  error_reporting_and_logging:
-  runtime_stats:
-  autovacuum:
-  client_defaults:
-  lock_mgmt:
-  compat:
-  errors:
-  extensions:
+    max_wal_senders: 0
+    wal_keep_segments: 0
+    wal_sender_timeout: "60s"
+    synchronous_standby_names: ""
+    vacuum_defer_cleanup_age: 0
+    hot_standby: "off"
+    max_standby_archive_deplay: "30s"
+    max_standby_streaming_delay: "15s"
+    max_receiver_status_interval: "10s"
+    hot_standby_feedback: "off"
+    wal_receiver_timeout: "60s"
+  query_tuning: {}
+  error_reporting_and_logging: {}
+  runtime_stats: {}
+  autovacuum: {}
+  client_defaults: {}
+  lock_mgmt: {}
+  compat: {}
+  errors: {}
+  extensions: {}
